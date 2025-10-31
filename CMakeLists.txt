@@ -14,7 +14,6 @@
 # Versión mínima de CMake requerida
 # RAZÓN: cmake 3.10 es estable y ampliamente disponible en Ubuntu
 cmake_minimum_required(VERSION 3.10)
-
 # Nombre del proyecto y lenguajes usados
 # RAZÓN: Define el nombre que aparecerá en entornos de desarrollo
 project(SistemaIoT LANGUAGES CXX)

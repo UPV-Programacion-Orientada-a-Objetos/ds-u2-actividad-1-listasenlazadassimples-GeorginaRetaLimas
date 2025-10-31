@@ -301,4 +301,6 @@ public:
     bool estaVacia() const {
         return cabeza == nullptr;
     }
-}
+};
+
+#endif

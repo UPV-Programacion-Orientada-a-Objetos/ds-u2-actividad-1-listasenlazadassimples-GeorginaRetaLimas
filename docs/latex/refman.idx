@@ -1,0 +1,118 @@
+\indexentry{GestorSensores@{GestorSensores}|hyperpage}{7}
+\indexentry{GestorSensores@{GestorSensores}!GestorSensores@{GestorSensores}|hyperpage}{9}
+\indexentry{GestorSensores@{GestorSensores}!GestorSensores@{GestorSensores}|hyperpage}{9}
+\indexentry{GestorSensores@{GestorSensores}!````~GestorSensores@{\texorpdfstring{$\sim$}{\string~}GestorSensores}|hyperpage}{9}
+\indexentry{````~GestorSensores@{\texorpdfstring{$\sim$}{\string~}GestorSensores}!GestorSensores@{GestorSensores}|hyperpage}{9}
+\indexentry{GestorSensores@{GestorSensores}!agregarSensor@{agregarSensor}|hyperpage}{10}
+\indexentry{agregarSensor@{agregarSensor}!GestorSensores@{GestorSensores}|hyperpage}{10}
+\indexentry{GestorSensores@{GestorSensores}!buscarSensor@{buscarSensor}|hyperpage}{11}
+\indexentry{buscarSensor@{buscarSensor}!GestorSensores@{GestorSensores}|hyperpage}{11}
+\indexentry{GestorSensores@{GestorSensores}!listarSensores@{listarSensores}|hyperpage}{11}
+\indexentry{listarSensores@{listarSensores}!GestorSensores@{GestorSensores}|hyperpage}{11}
+\indexentry{GestorSensores@{GestorSensores}!obtenerCantidad@{obtenerCantidad}|hyperpage}{11}
+\indexentry{obtenerCantidad@{obtenerCantidad}!GestorSensores@{GestorSensores}|hyperpage}{11}
+\indexentry{GestorSensores@{GestorSensores}!procesarTodos@{procesarTodos}|hyperpage}{11}
+\indexentry{procesarTodos@{procesarTodos}!GestorSensores@{GestorSensores}|hyperpage}{11}
+\indexentry{GestorSensores@{GestorSensores}!cabeza@{cabeza}|hyperpage}{12}
+\indexentry{cabeza@{cabeza}!GestorSensores@{GestorSensores}|hyperpage}{12}
+\indexentry{GestorSensores@{GestorSensores}!cantidad@{cantidad}|hyperpage}{12}
+\indexentry{cantidad@{cantidad}!GestorSensores@{GestorSensores}|hyperpage}{12}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{13}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!ListaSensor@{ListaSensor}|hyperpage}{14}
+\indexentry{ListaSensor@{ListaSensor}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{14}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!````~ListaSensor@{\texorpdfstring{$\sim$}{\string~}ListaSensor}|hyperpage}{14}
+\indexentry{````~ListaSensor@{\texorpdfstring{$\sim$}{\string~}ListaSensor}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{14}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!ListaSensor@{ListaSensor}|hyperpage}{14}
+\indexentry{ListaSensor@{ListaSensor}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{14}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!calcularPromedio@{calcularPromedio}|hyperpage}{15}
+\indexentry{calcularPromedio@{calcularPromedio}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{15}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!eliminarMinimo@{eliminarMinimo}|hyperpage}{15}
+\indexentry{eliminarMinimo@{eliminarMinimo}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{15}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!estaVacia@{estaVacia}|hyperpage}{16}
+\indexentry{estaVacia@{estaVacia}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{16}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!imprimir@{imprimir}|hyperpage}{16}
+\indexentry{imprimir@{imprimir}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{16}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!insertarAlFinal@{insertarAlFinal}|hyperpage}{17}
+\indexentry{insertarAlFinal@{insertarAlFinal}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{17}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!obtenerTamaño@{obtenerTamaño}|hyperpage}{18}
+\indexentry{obtenerTamaño@{obtenerTamaño}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{18}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!operator=@{operator=}|hyperpage}{18}
+\indexentry{operator=@{operator=}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{18}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!cabeza@{cabeza}|hyperpage}{19}
+\indexentry{cabeza@{cabeza}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{19}
+\indexentry{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!tamaño@{tamaño}|hyperpage}{19}
+\indexentry{tamaño@{tamaño}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}|hyperpage}{19}
+\indexentry{Nodo$<$ T $>$@{Nodo$<$ T $>$}|hyperpage}{19}
+\indexentry{Nodo$<$ T $>$@{Nodo$<$ T $>$}!Nodo@{Nodo}|hyperpage}{20}
+\indexentry{Nodo@{Nodo}!Nodo$<$ T $>$@{Nodo$<$ T $>$}|hyperpage}{20}
+\indexentry{Nodo$<$ T $>$@{Nodo$<$ T $>$}!dato@{dato}|hyperpage}{21}
+\indexentry{dato@{dato}!Nodo$<$ T $>$@{Nodo$<$ T $>$}|hyperpage}{21}
+\indexentry{Nodo$<$ T $>$@{Nodo$<$ T $>$}!siguiente@{siguiente}|hyperpage}{21}
+\indexentry{siguiente@{siguiente}!Nodo$<$ T $>$@{Nodo$<$ T $>$}|hyperpage}{21}
+\indexentry{NodoSensor@{NodoSensor}|hyperpage}{21}
+\indexentry{NodoSensor@{NodoSensor}!NodoSensor@{NodoSensor}|hyperpage}{22}
+\indexentry{NodoSensor@{NodoSensor}!NodoSensor@{NodoSensor}|hyperpage}{22}
+\indexentry{NodoSensor@{NodoSensor}!sensor@{sensor}|hyperpage}{23}
+\indexentry{sensor@{sensor}!NodoSensor@{NodoSensor}|hyperpage}{23}
+\indexentry{NodoSensor@{NodoSensor}!siguiente@{siguiente}|hyperpage}{23}
+\indexentry{siguiente@{siguiente}!NodoSensor@{NodoSensor}|hyperpage}{23}
+\indexentry{SensorBase@{SensorBase}|hyperpage}{23}
+\indexentry{SensorBase@{SensorBase}!SensorBase@{SensorBase}|hyperpage}{25}
+\indexentry{SensorBase@{SensorBase}!SensorBase@{SensorBase}|hyperpage}{25}
+\indexentry{SensorBase@{SensorBase}!````~SensorBase@{\texorpdfstring{$\sim$}{\string~}SensorBase}|hyperpage}{25}
+\indexentry{````~SensorBase@{\texorpdfstring{$\sim$}{\string~}SensorBase}!SensorBase@{SensorBase}|hyperpage}{25}
+\indexentry{SensorBase@{SensorBase}!agregarLectura@{agregarLectura}|hyperpage}{25}
+\indexentry{agregarLectura@{agregarLectura}!SensorBase@{SensorBase}|hyperpage}{25}
+\indexentry{SensorBase@{SensorBase}!imprimirInfo@{imprimirInfo}|hyperpage}{26}
+\indexentry{imprimirInfo@{imprimirInfo}!SensorBase@{SensorBase}|hyperpage}{26}
+\indexentry{SensorBase@{SensorBase}!obtenerNombre@{obtenerNombre}|hyperpage}{26}
+\indexentry{obtenerNombre@{obtenerNombre}!SensorBase@{SensorBase}|hyperpage}{26}
+\indexentry{SensorBase@{SensorBase}!procesarLectura@{procesarLectura}|hyperpage}{26}
+\indexentry{procesarLectura@{procesarLectura}!SensorBase@{SensorBase}|hyperpage}{26}
+\indexentry{SensorBase@{SensorBase}!nombre@{nombre}|hyperpage}{27}
+\indexentry{nombre@{nombre}!SensorBase@{SensorBase}|hyperpage}{27}
+\indexentry{SensorPresion@{SensorPresion}|hyperpage}{28}
+\indexentry{SensorPresion@{SensorPresion}!SensorPresion@{SensorPresion}|hyperpage}{30}
+\indexentry{SensorPresion@{SensorPresion}!SensorPresion@{SensorPresion}|hyperpage}{30}
+\indexentry{SensorPresion@{SensorPresion}!````~SensorPresion@{\texorpdfstring{$\sim$}{\string~}SensorPresion}|hyperpage}{30}
+\indexentry{````~SensorPresion@{\texorpdfstring{$\sim$}{\string~}SensorPresion}!SensorPresion@{SensorPresion}|hyperpage}{30}
+\indexentry{SensorPresion@{SensorPresion}!agregarLectura@{agregarLectura}|hyperpage}{31}
+\indexentry{agregarLectura@{agregarLectura}!SensorPresion@{SensorPresion}|hyperpage}{31}
+\indexentry{SensorPresion@{SensorPresion}!imprimirInfo@{imprimirInfo}|hyperpage}{31}
+\indexentry{imprimirInfo@{imprimirInfo}!SensorPresion@{SensorPresion}|hyperpage}{31}
+\indexentry{SensorPresion@{SensorPresion}!procesarLectura@{procesarLectura}|hyperpage}{31}
+\indexentry{procesarLectura@{procesarLectura}!SensorPresion@{SensorPresion}|hyperpage}{31}
+\indexentry{SensorPresion@{SensorPresion}!historial@{historial}|hyperpage}{32}
+\indexentry{historial@{historial}!SensorPresion@{SensorPresion}|hyperpage}{32}
+\indexentry{SensorTemperatura@{SensorTemperatura}|hyperpage}{32}
+\indexentry{SensorTemperatura@{SensorTemperatura}!SensorTemperatura@{SensorTemperatura}|hyperpage}{34}
+\indexentry{SensorTemperatura@{SensorTemperatura}!SensorTemperatura@{SensorTemperatura}|hyperpage}{34}
+\indexentry{SensorTemperatura@{SensorTemperatura}!````~SensorTemperatura@{\texorpdfstring{$\sim$}{\string~}SensorTemperatura}|hyperpage}{35}
+\indexentry{````~SensorTemperatura@{\texorpdfstring{$\sim$}{\string~}SensorTemperatura}!SensorTemperatura@{SensorTemperatura}|hyperpage}{35}
+\indexentry{SensorTemperatura@{SensorTemperatura}!agregarLectura@{agregarLectura}|hyperpage}{35}
+\indexentry{agregarLectura@{agregarLectura}!SensorTemperatura@{SensorTemperatura}|hyperpage}{35}
+\indexentry{SensorTemperatura@{SensorTemperatura}!imprimirInfo@{imprimirInfo}|hyperpage}{36}
+\indexentry{imprimirInfo@{imprimirInfo}!SensorTemperatura@{SensorTemperatura}|hyperpage}{36}
+\indexentry{SensorTemperatura@{SensorTemperatura}!procesarLectura@{procesarLectura}|hyperpage}{36}
+\indexentry{procesarLectura@{procesarLectura}!SensorTemperatura@{SensorTemperatura}|hyperpage}{36}
+\indexentry{SensorTemperatura@{SensorTemperatura}!historial@{historial}|hyperpage}{36}
+\indexentry{historial@{historial}!SensorTemperatura@{SensorTemperatura}|hyperpage}{36}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/GestorSensores.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/GestorSensores.h}|hyperpage}{37}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/GestorSensores.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/GestorSensores.h}|hyperpage}{38}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/ListaSensor.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/ListaSensor.h}|hyperpage}{40}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/ListaSensor.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/ListaSensor.h}|hyperpage}{41}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorBase.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorBase.h}|hyperpage}{44}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorBase.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorBase.h}|hyperpage}{45}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorPresion.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorPresion.h}|hyperpage}{45}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorPresion.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorPresion.h}|hyperpage}{47}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorTemperatura.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorTemperatura.h}|hyperpage}{47}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorTemperatura.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorTemperatura.h}|hyperpage}{49}
+\indexentry{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/src/main.cpp@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/src/main.cpp}|hyperpage}{49}
+\indexentry{main.cpp@{main.cpp}!configurarSerial@{configurarSerial}|hyperpage}{51}
+\indexentry{configurarSerial@{configurarSerial}!main.cpp@{main.cpp}|hyperpage}{51}
+\indexentry{main.cpp@{main.cpp}!leerLineaSerial@{leerLineaSerial}|hyperpage}{51}
+\indexentry{leerLineaSerial@{leerLineaSerial}!main.cpp@{main.cpp}|hyperpage}{51}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{52}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{52}
+\indexentry{main.cpp@{main.cpp}!procesarLinea@{procesarLinea}|hyperpage}{52}
+\indexentry{procesarLinea@{procesarLinea}!main.cpp@{main.cpp}|hyperpage}{52}

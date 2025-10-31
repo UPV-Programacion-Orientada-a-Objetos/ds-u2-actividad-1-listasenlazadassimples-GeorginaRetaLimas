@@ -1,0 +1,191 @@
+\doxysection{/home/gina/\+Documentos/\+Est\+Datos/\+Actividades/\+U2-\/\+Act1-\/listasenlazadas/src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/src/main.cpp@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/src/main.cpp}}
+
+
+Programa principal del Sistema de Gestión Polimórfica de Sensores para IoT.  
+
+
+{\ttfamily \#include "{}Gestor\+Sensores.\+h"{}}\newline
+{\ttfamily \#include "{}Sensor\+Temperatura.\+h"{}}\newline
+{\ttfamily \#include "{}Sensor\+Presion.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{main_8cpp_ae6e47fc27bd731fef567f6f2b30ef197}{configurar\+Serial}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{puerto}}, \mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{structNodo}{baudrate}})
+\begin{DoxyCompactList}\small\item\em Configuración del puerto serial para ESP32. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{bool}} \mbox{\hyperlink{main_8cpp_a72149f95e20002e1066d41501bf3bad0}{leer\+Linea\+Serial}} (\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{structNodo}{fd}}, \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{buffer}}, \mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{structNodo}{max\+Len}})
+\begin{DoxyCompactList}\small\item\em Lee una línea completa desde el puerto serial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{main_8cpp_a1029f8288bc449ea621e899beda81743}{procesar\+Linea}} (\mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{linea}}, \mbox{\hyperlink{classGestorSensores}{Gestor\+Sensores}} \&\mbox{\hyperlink{structNodo}{gestor}})
+\begin{DoxyCompactList}\small\item\em Procesa una línea recibida del ESP32. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Función principal del programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Programa principal del Sistema de Gestión Polimórfica de Sensores para IoT. 
+
+Integra comunicación serial con ESP32 y gestión polimórfica de sensores
+
+FLUJO DEL PROGRAMA\+:
+\begin{DoxyEnumerate}
+\item Inicializar el gestor de sensores
+\item Configurar comunicación serial con ESP32
+\item Crear sensores de diferentes tipos
+\item Recibir lecturas desde el puerto serial
+\item Procesar datos polimórficamente
+\item Liberar memoria automáticamente 
+\end{DoxyEnumerate}
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae6e47fc27bd731fef567f6f2b30ef197}\label{main_8cpp_ae6e47fc27bd731fef567f6f2b30ef197} 
+\index{main.cpp@{main.cpp}!configurarSerial@{configurarSerial}}
+\index{configurarSerial@{configurarSerial}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{configurarSerial()}{configurarSerial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{int}} configurar\+Serial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{puerto,  }\item[{\mbox{\hyperlink{structNodo}{int}}}]{baudrate }\end{DoxyParamCaption})}
+
+
+
+Configuración del puerto serial para ESP32. 
+
+\begin{DoxyReturn}{Returns}
+Descriptor de archivo del puerto, o -\/1 si falla
+\end{DoxyReturn}
+CONCEPTO\+: Puerto Serial\+: Es un canal de comunicación entre la computadora y el ESP32. Funciona como un "{}cable virtual"{} por donde viajan datos.
+
+PARÁ\+METROS CLAVES\+:
+\begin{DoxyItemize}
+\item Baudrate\+: Velocidad de transmisión (bits por segundo)
+\begin{DoxyItemize}
+\item 9600\+: Lento pero confiable
+\item 115200\+: Rápido, ideal para sensores 
+\end{DoxyItemize}
+\end{DoxyItemize}Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{main_8cpp_ae6e47fc27bd731fef567f6f2b30ef197_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_a72149f95e20002e1066d41501bf3bad0}\label{main_8cpp_a72149f95e20002e1066d41501bf3bad0} 
+\index{main.cpp@{main.cpp}!leerLineaSerial@{leerLineaSerial}}
+\index{leerLineaSerial@{leerLineaSerial}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{leerLineaSerial()}{leerLineaSerial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{bool}} leer\+Linea\+Serial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{int}}}]{fd,  }\item[{\mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{buffer,  }\item[{\mbox{\hyperlink{structNodo}{int}}}]{max\+Len }\end{DoxyParamCaption})}
+
+
+
+Lee una línea completa desde el puerto serial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & Descriptor del puerto serial \\
+\hline
+{\em buffer} & Buffer donde se almacenará la línea \\
+\hline
+{\em max\+Len} & Tamaño máximo del buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se leyó una línea completa, false en caso contrario
+\end{DoxyReturn}
+CONCEPTO -\/ Lectura Serial\+: Los datos llegan byte por byte. Debemos acumularlos hasta encontrar un carácter de nueva línea (\textquotesingle{}~\newline
+\textquotesingle{}).
+
+FORMATO ESPERADO DEL ESP32\+: "{}\+T,\+T-\/001,23.\+5\textbackslash{}n"{} "{}\+P,\+P-\/105,1013\textbackslash{}n"{}
+
+Donde\+:
+\begin{DoxyItemize}
+\item Primer campo\+: Tipo (T=Temperatura, P=Presión)
+\item Segundo campo\+: ID del sensor
+\item Tercer campo\+: Valor de la lectura
+\end{DoxyItemize}
+
+PROCESO\+:
+\begin{DoxyEnumerate}
+\item Leer caracteres uno por uno
+\item Acumular en buffer
+\item Si encontramos \textquotesingle{}~\newline
+\textquotesingle{}, terminamos
+\item Retornar true si la línea está completa 
+\end{DoxyEnumerate}Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{main_8cpp_a72149f95e20002e1066d41501bf3bad0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{int}} main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función principal del programa. 
+
+FLUJO\+:
+\begin{DoxyEnumerate}
+\item Crear el gestor de sensores
+\item Configurar puerto serial
+\item Bucle principal\+:
+\begin{DoxyItemize}
+\item Leer datos del ESP32
+\item Crear sensores dinámicamente
+\item Acumular lecturas
+\end{DoxyItemize}
+\item Procesar todos los sensores
+\item Limpiar memoria (automático por destructores) 
+\end{DoxyEnumerate}\Hypertarget{main_8cpp_a1029f8288bc449ea621e899beda81743}\label{main_8cpp_a1029f8288bc449ea621e899beda81743} 
+\index{main.cpp@{main.cpp}!procesarLinea@{procesarLinea}}
+\index{procesarLinea@{procesarLinea}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{procesarLinea()}{procesarLinea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{void}} procesar\+Linea (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{linea,  }\item[{\mbox{\hyperlink{classGestorSensores}{Gestor\+Sensores}} \&}]{gestor }\end{DoxyParamCaption})}
+
+
+
+Procesa una línea recibida del ESP32. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linea} & String con formato "{}\+TIPO,\+ID,\+VALOR"{} \\
+\hline
+{\em gestor} & Referencia al gestor de sensores\\
+\hline
+\end{DoxyParams}
+FORMATO DE LÍ\+NEA\+: "{}\+T,\+T-\/001,23.\+5"{} -\/\texorpdfstring{$>$}{>} Temperatura, ID=T-\/001, Valor=\doxylink{structNodo_a96da8b61d6884126bb04fced32542df9}{23.\+5} "{}\+P,\+P-\/105,1013"{} -\/\texorpdfstring{$>$}{>} Presión, ID=P-\/105, Valor=1013
+
+PROCESO DE PARSING\+:
+\begin{DoxyEnumerate}
+\item Dividir la línea en campos usando \textquotesingle{},\textquotesingle{} como separador
+\item Campo 0\+: Tipo de sensor (T o P)
+\item Campo 1\+: ID del sensor
+\item Campo 2\+: Valor de la lectura
+\item Buscar el sensor en el gestor
+\item Si no existe, crearlo
+\item Agregar la lectura al sensor
+\end{DoxyEnumerate}
+
+TÉ\+CNICA -\/ strtok\+: strtok divide un string usando delimitadores. Primera llamada\+: strtok(linea, "{},"{}) Siguientes\+: strtok(nullptr, "{},"{}) Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{main_8cpp_a1029f8288bc449ea621e899beda81743_icgraph}
+\end{center}
+\end{figure}

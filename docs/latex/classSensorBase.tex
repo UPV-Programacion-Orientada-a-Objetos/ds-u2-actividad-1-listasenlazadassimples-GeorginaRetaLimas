@@ -1,0 +1,230 @@
+\doxysection{Sensor\+Base Class Reference}
+\hypertarget{classSensorBase}{}\label{classSensorBase}\index{SensorBase@{SensorBase}}
+
+
+Clase abstracta que representa un sensor genérico.  
+
+
+
+
+{\ttfamily \#include $<$Sensor\+Base.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classSensorBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sensor\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classSensorBase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensorBase_a7674c56935894725090585ce565514a8}{Sensor\+Base}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{id}})
+\begin{DoxyCompactList}\small\item\em Constructor que inicializa el nombre del sensor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{classSensorBase_acb58cfa69a0635dc3ef5ccb1590dc261}{\texorpdfstring{$\sim$}{\string~}\+Sensor\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor virtual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{procesar\+Lectura}} ()=0
+\begin{DoxyCompactList}\small\item\em Procesa las lecturas del sensor según su tipo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classSensorBase_a7cf3aeb12b330c500e2a5136fa020eec}{imprimir\+Info}} () \mbox{\hyperlink{structNodo}{const}} =0
+\begin{DoxyCompactList}\small\item\em Imprime información del sensor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classSensorBase_adfcce9176e571b524e9cd03e507e94d4}{agregar\+Lectura}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{valor}})=0
+\begin{DoxyCompactList}\small\item\em Agrega una lectura al sensor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSensorBase_adb19329ba35a359c664b66575aab7552}{obtener\+Nombre}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodo}{char}} \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}} \mbox{[}50\mbox{]}
+\begin{DoxyCompactList}\small\item\em Identificador único del sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase abstracta que representa un sensor genérico. 
+
+CONCEPTO -\/ Clase Abstracta\+: Es como una plantilla que establece lo que cualquier sensor DEBE poder\+:
+\begin{DoxyEnumerate}
+\item Procesarse (procesar\+Lectura)
+\item Imprimir su información (imprimir\+Info)
+\item Agregar lecturas (agregar\+Lectura)
+\end{DoxyEnumerate}
+
+RAZÓN del "{}= 0"{}\+: Los métodos con "{}= 0"{} son "{}virtuales puros"{}. Esto significa\+:
+\begin{DoxyItemize}
+\item NO tienen implementación aquí
+\item Las clases hijas DEBEN implementarlos
+\item NO se puede crear un objeto \doxylink{classSensorBase}{Sensor\+Base} directamente 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSensorBase_a7674c56935894725090585ce565514a8}\label{classSensorBase_a7674c56935894725090585ce565514a8} 
+\index{SensorBase@{SensorBase}!SensorBase@{SensorBase}}
+\index{SensorBase@{SensorBase}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{SensorBase()}{SensorBase()}}
+{\footnotesize\ttfamily Sensor\+Base\+::\+Sensor\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor que inicializa el nombre del sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del sensor (ej\+: "{}\+T-\/001"{}, "{}\+P-\/105"{})\\
+\hline
+\end{DoxyParams}
+RAZÓN de usar strcpy\+:
+\begin{DoxyItemize}
+\item Copia cadenas de caracteres al estilo C
+\item strcpy(destino, origen) 
+\end{DoxyItemize}\Hypertarget{classSensorBase_acb58cfa69a0635dc3ef5ccb1590dc261}\label{classSensorBase_acb58cfa69a0635dc3ef5ccb1590dc261} 
+\index{SensorBase@{SensorBase}!````~SensorBase@{\texorpdfstring{$\sim$}{\string~}SensorBase}}
+\index{````~SensorBase@{\texorpdfstring{$\sim$}{\string~}SensorBase}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SensorBase()}{\string~SensorBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{virtual}} Sensor\+Base\+::\texorpdfstring{$\sim$}{\string~}\+Sensor\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destructor virtual. 
+
+REGLA DE ORO\+: Si una clase tiene métodos virtuales, su destructor DEBE ser virtual. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSensorBase_adfcce9176e571b524e9cd03e507e94d4}\label{classSensorBase_adfcce9176e571b524e9cd03e507e94d4} 
+\index{SensorBase@{SensorBase}!agregarLectura@{agregarLectura}}
+\index{agregarLectura@{agregarLectura}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{agregarLectura()}{agregarLectura()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{structNodo}{void}} Sensor\+Base\+::agregar\+Lectura (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Agrega una lectura al sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor de la lectura\\
+\hline
+\end{DoxyParams}
+RAZÓN de recibir const char\texorpdfstring{$\ast$}{*}\+:
+\begin{DoxyItemize}
+\item Podemos recibir "{}45.\+3"{} o "{}80"{}
+\item La clase hija convierte al tipo correcto, float o int 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classSensorPresion_a842b0bcefce4fbfd1e6ef14ce0fe4117}{Sensor\+Presion}}, and \mbox{\hyperlink{classSensorTemperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa}{Sensor\+Temperatura}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensorBase_adfcce9176e571b524e9cd03e507e94d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSensorBase_a7cf3aeb12b330c500e2a5136fa020eec}\label{classSensorBase_a7cf3aeb12b330c500e2a5136fa020eec} 
+\index{SensorBase@{SensorBase}!imprimirInfo@{imprimirInfo}}
+\index{imprimirInfo@{imprimirInfo}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{imprimirInfo()}{imprimirInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{structNodo}{void}} Sensor\+Base\+::imprimir\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Imprime información del sensor. 
+
+MÉ\+TODO VIRTUAL PURO\+: Cada sensor mostrará su información específica 
+
+Implemented in \mbox{\hyperlink{classSensorPresion_ad5181690dfb24946217e882606f04428}{Sensor\+Presion}}, and \mbox{\hyperlink{classSensorTemperatura_a95a263967c5f9a55da09be3b11c27c86}{Sensor\+Temperatura}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensorBase_a7cf3aeb12b330c500e2a5136fa020eec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSensorBase_adb19329ba35a359c664b66575aab7552}\label{classSensorBase_adb19329ba35a359c664b66575aab7552} 
+\index{SensorBase@{SensorBase}!obtenerNombre@{obtenerNombre}}
+\index{obtenerNombre@{obtenerNombre}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{obtenerNombre()}{obtenerNombre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*} Sensor\+Base\+::obtener\+Nombre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el nombre del sensor. 
+
+\begin{DoxyReturn}{Returns}
+Puntero al nombre
+\end{DoxyReturn}
+MÉ\+TODO NO VIRTUAL\+: Todos los sensores obtienen el nombre igual, no necesita polimorfismo. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensorBase_adb19329ba35a359c664b66575aab7552_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4}\label{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4} 
+\index{SensorBase@{SensorBase}!procesarLectura@{procesarLectura}}
+\index{procesarLectura@{procesarLectura}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{procesarLectura()}{procesarLectura()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{structNodo}{void}} Sensor\+Base\+::procesar\+Lectura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Procesa las lecturas del sensor según su tipo. 
+
+MÉ\+TODO VIRTUAL PURO (= 0)\+:
+\begin{DoxyItemize}
+\item Cada tipo de sensor lo implementa diferente\+:
+\begin{DoxyItemize}
+\item Temperatura\+: Elimina el mínimo y calcula promedio
+\item Presión\+: Calcula promedio directo
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+RAZÓN del \textquotesingle{}virtual\textquotesingle{}\+: Permite que en tiempo de ejecución se llame a la versión correcta\+: Sensor\+Base\texorpdfstring{$\ast$}{*} s = new \doxylink{classSensorTemperatura}{Sensor\+Temperatura()}; s-\/\texorpdfstring{$>$}{>}\doxylink{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{procesar\+Lectura()}; // Llama a \doxylink{classSensorTemperatura_a36227dc500c6f8be7866cb0f396894b3}{Sensor\+Temperatura\+::procesar\+Lectura()} 
+
+Implemented in \mbox{\hyperlink{classSensorPresion_aff696aceb5e619529f911311a35d3c76}{Sensor\+Presion}}, and \mbox{\hyperlink{classSensorTemperatura_a36227dc500c6f8be7866cb0f396894b3}{Sensor\+Temperatura}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}\label{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5} 
+\index{SensorBase@{SensorBase}!nombre@{nombre}}
+\index{nombre@{nombre}!SensorBase@{SensorBase}}
+\doxysubsubsection{\texorpdfstring{nombre}{nombre}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{char}} Sensor\+Base\+::nombre\mbox{[}50\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Identificador único del sensor. 
+
+RAZÓN del protected\+:
+\begin{DoxyItemize}
+\item Las clases hijas pueden accederlo
+\item El mundo exterior NO puede modificarlo directamente 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gina/\+Documentos/\+Est\+Datos/\+Actividades/\+U2-\/\+Act1-\/listasenlazadas/include/\mbox{\hyperlink{SensorBase_8h}{Sensor\+Base.\+h}}\end{DoxyCompactItemize}

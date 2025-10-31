@@ -1,0 +1,223 @@
+\doxysection{Sensor\+Temperatura Class Reference}
+\hypertarget{classSensorTemperatura}{}\label{classSensorTemperatura}\index{SensorTemperatura@{SensorTemperatura}}
+
+
+Sensor que maneja temperaturas en formato float.  
+
+
+
+
+{\ttfamily \#include $<$Sensor\+Temperatura.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+Temperatura\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classSensorTemperatura__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sensor\+Temperatura\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSensorTemperatura__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensorTemperatura_a13063a6569078d34573d3a3af703e34f}{Sensor\+Temperatura}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{id}})
+\begin{DoxyCompactList}\small\item\em Constructor que inicializa el sensor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSensorTemperatura_aaeb0f7948069eb57dc05170414c47b12}{\texorpdfstring{$\sim$}{\string~}\+Sensor\+Temperatura}} ()
+\begin{DoxyCompactList}\small\item\em Destructor que libera la lista interna. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classSensorTemperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa}{agregar\+Lectura}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{valor}}) \mbox{\hyperlink{structNodo}{override}}
+\begin{DoxyCompactList}\small\item\em Agrega una lectura de temperatura a la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classSensorTemperatura_a36227dc500c6f8be7866cb0f396894b3}{procesar\+Lectura}} () \mbox{\hyperlink{structNodo}{override}}
+\begin{DoxyCompactList}\small\item\em Procesa las lecturas\+: elimina mínimo y calcula promedio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classSensorTemperatura_a95a263967c5f9a55da09be3b11c27c86}{imprimir\+Info}} () \mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{override}}
+\begin{DoxyCompactList}\small\item\em Imprime información del sensor y sus lecturas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classSensorBase}{Sensor\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensorBase_a7674c56935894725090585ce565514a8}{Sensor\+Base}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{id}})
+\begin{DoxyCompactList}\small\item\em Constructor que inicializa el nombre del sensor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{virtual}} \mbox{\hyperlink{classSensorBase_acb58cfa69a0635dc3ef5ccb1590dc261}{\texorpdfstring{$\sim$}{\string~}\+Sensor\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor virtual. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classSensorBase_adb19329ba35a359c664b66575aab7552}{obtener\+Nombre}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ \mbox{\hyperlink{structNodo}{float}} $>$ \mbox{\hyperlink{classSensorTemperatura_a655dbd17010e1fe8587d7d65705f8068}{historial}}
+\begin{DoxyCompactList}\small\item\em Lista enlazada que almacena las lecturas de temperatura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classSensorBase}{Sensor\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodo}{char}} \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}} \mbox{[}50\mbox{]}
+\begin{DoxyCompactList}\small\item\em Identificador único del sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sensor que maneja temperaturas en formato float. 
+
+Hereda\+:
+\begin{DoxyItemize}
+\item El atributo \textquotesingle{}nombre\textquotesingle{}
+\item La interfaz
+\end{DoxyItemize}
+
+Debe implementar\+:
+\begin{DoxyItemize}
+\item \doxylink{classSensorTemperatura_a36227dc500c6f8be7866cb0f396894b3}{procesar\+Lectura()}
+\item \doxylink{classSensorTemperatura_a95a263967c5f9a55da09be3b11c27c86}{imprimir\+Info()}
+\item \doxylink{classSensorTemperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa}{agregar\+Lectura()} 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSensorTemperatura_a13063a6569078d34573d3a3af703e34f}\label{classSensorTemperatura_a13063a6569078d34573d3a3af703e34f} 
+\index{SensorTemperatura@{SensorTemperatura}!SensorTemperatura@{SensorTemperatura}}
+\index{SensorTemperatura@{SensorTemperatura}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{SensorTemperatura()}{SensorTemperatura()}}
+{\footnotesize\ttfamily Sensor\+Temperatura\+::\+Sensor\+Temperatura (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor que inicializa el sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del sensor\\
+\hline
+\end{DoxyParams}
+SINTAXIS \textquotesingle{}\doxylink{classSensorBase}{Sensor\+Base(id)}\textquotesingle{}\+: Esto se llama "{}lista de inicialización de constructor"{}
+\begin{DoxyItemize}
+\item Llama al constructor de la clase padre -\/\texorpdfstring{$>$}{>} \doxylink{classSensorBase}{Sensor\+Base}
+\item Le pasa el parámetro \textquotesingle{}id\textquotesingle{}
+\end{DoxyItemize}
+
+PROCESO\+:
+\begin{DoxyEnumerate}
+\item Se construye \doxylink{classSensorBase}{Sensor\+Base} con el id
+\item Se construye el historial
+\item Se ejecuta el cuerpo del constructor 
+\end{DoxyEnumerate}\Hypertarget{classSensorTemperatura_aaeb0f7948069eb57dc05170414c47b12}\label{classSensorTemperatura_aaeb0f7948069eb57dc05170414c47b12} 
+\index{SensorTemperatura@{SensorTemperatura}!````~SensorTemperatura@{\texorpdfstring{$\sim$}{\string~}SensorTemperatura}}
+\index{````~SensorTemperatura@{\texorpdfstring{$\sim$}{\string~}SensorTemperatura}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SensorTemperatura()}{\string~SensorTemperatura()}}
+{\footnotesize\ttfamily Sensor\+Temperatura\+::\texorpdfstring{$\sim$}{\string~}\+Sensor\+Temperatura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor que libera la lista interna. 
+
+PROCESO DE DESTRUCCIÓN\+:
+\begin{DoxyEnumerate}
+\item Se ejecuta este destructor
+\item Se destruye "{}historial"{} -\/\texorpdfstring{$>$}{>} llama a \texorpdfstring{$\sim$}{\string~}\+Lista\+Sensor$<$float$>$()
+\item Se llama a \doxylink{classSensorBase_acb58cfa69a0635dc3ef5ccb1590dc261}{\texorpdfstring{$\sim$}{\string~}\+Sensor\+Base()}
+\end{DoxyEnumerate}
+
+RAZÓN de imprimir logs\+:
+\begin{DoxyItemize}
+\item Para verificar que la memoria se libera correctamente
+\item Para que yo entienda mejor mi codigo \+:3 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSensorTemperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa}\label{classSensorTemperatura_aee3fe454fb7aa0183f2b26e7c2b8dffa} 
+\index{SensorTemperatura@{SensorTemperatura}!agregarLectura@{agregarLectura}}
+\index{agregarLectura@{agregarLectura}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{agregarLectura()}{agregarLectura()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{void}} Sensor\+Temperatura\+::agregar\+Lectura (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Agrega una lectura de temperatura a la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & String con el valor\\
+\hline
+\end{DoxyParams}
+RAZÓN de usar atof()\+:
+\begin{DoxyItemize}
+\item atof = ASCII to Float
+\item Convierte por ejemplo "{}23.\+5"{} (char\texorpdfstring{$\ast$}{*}) -\/\texorpdfstring{$>$}{>} \doxylink{structNodo_a96da8b61d6884126bb04fced32542df9}{23.\+5} (float) 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classSensorBase_adfcce9176e571b524e9cd03e507e94d4}{Sensor\+Base}}.
+
+\Hypertarget{classSensorTemperatura_a95a263967c5f9a55da09be3b11c27c86}\label{classSensorTemperatura_a95a263967c5f9a55da09be3b11c27c86} 
+\index{SensorTemperatura@{SensorTemperatura}!imprimirInfo@{imprimirInfo}}
+\index{imprimirInfo@{imprimirInfo}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{imprimirInfo()}{imprimirInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{void}} Sensor\+Temperatura\+::imprimir\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Imprime información del sensor y sus lecturas. 
+
+MÉ\+TODO const\+:
+\begin{DoxyItemize}
+\item No modifica el objeto
+\item Puede ser llamado en objetos const 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classSensorBase_a7cf3aeb12b330c500e2a5136fa020eec}{Sensor\+Base}}.
+
+\Hypertarget{classSensorTemperatura_a36227dc500c6f8be7866cb0f396894b3}\label{classSensorTemperatura_a36227dc500c6f8be7866cb0f396894b3} 
+\index{SensorTemperatura@{SensorTemperatura}!procesarLectura@{procesarLectura}}
+\index{procesarLectura@{procesarLectura}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{procesarLectura()}{procesarLectura()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{void}} Sensor\+Temperatura\+::procesar\+Lectura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Procesa las lecturas\+: elimina mínimo y calcula promedio. 
+
+LÓ\+GICA ESPECÍ\+FICA DE TEMPERATURA\+:
+\begin{DoxyEnumerate}
+\item Si hay lecturas, elimina la más baja porque podria ser un error o ruido
+\item Calcula el promedio de las restantes
+\item Muestra el resultado
+\end{DoxyEnumerate}
+
+RAZÓN de esta lógica\+: En sistemas reales, las lecturas anómalas bajas pueden indicar fallos del sensor, por eso las filtramos. 
+
+Implements \mbox{\hyperlink{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{Sensor\+Base}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSensorTemperatura_a655dbd17010e1fe8587d7d65705f8068}\label{classSensorTemperatura_a655dbd17010e1fe8587d7d65705f8068} 
+\index{SensorTemperatura@{SensorTemperatura}!historial@{historial}}
+\index{historial@{historial}!SensorTemperatura@{SensorTemperatura}}
+\doxysubsubsection{\texorpdfstring{historial}{historial}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$\mbox{\hyperlink{structNodo}{float}}$>$ Sensor\+Temperatura\+::historial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lista enlazada que almacena las lecturas de temperatura. 
+
+RAZÓN de usar \doxylink{classListaSensor}{Lista\+Sensor$<$float$>$}\+:
+\begin{DoxyItemize}
+\item Las temperaturas son decimales
+\item Necesitamos precisión decimal, por eso float
+\end{DoxyItemize}
+
+RAZÓN de ser private\+:
+\begin{DoxyItemize}
+\item Solo esta clase debe manipular su lista interna
+\item Encapsulamiento 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gina/\+Documentos/\+Est\+Datos/\+Actividades/\+U2-\/\+Act1-\/listasenlazadas/include/\mbox{\hyperlink{SensorTemperatura_8h}{Sensor\+Temperatura.\+h}}\end{DoxyCompactItemize}

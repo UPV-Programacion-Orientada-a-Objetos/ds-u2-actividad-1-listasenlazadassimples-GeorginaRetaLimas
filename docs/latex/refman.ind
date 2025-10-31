@@ -1,0 +1,202 @@
+\begin{theindex}
+
+  \item {/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/GestorSensores.h}, 
+		\hyperpage{37, 38}
+  \item {/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/ListaSensor.h}, 
+		\hyperpage{40, 41}
+  \item {/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorBase.h}, 
+		\hyperpage{44, 45}
+  \item {/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorPresion.h}, 
+		\hyperpage{45}, \hyperpage{47}
+  \item {/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorTemperatura.h}, 
+		\hyperpage{47}, \hyperpage{49}
+  \item {/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/src/main.cpp}, 
+		\hyperpage{49}
+  \item {\texorpdfstring{$\sim$}{\string~}GestorSensores}
+    \subitem {GestorSensores}, \hyperpage{9}
+  \item {\texorpdfstring{$\sim$}{\string~}ListaSensor}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{14}
+  \item {\texorpdfstring{$\sim$}{\string~}SensorBase}
+    \subitem {SensorBase}, \hyperpage{25}
+  \item {\texorpdfstring{$\sim$}{\string~}SensorPresion}
+    \subitem {SensorPresion}, \hyperpage{30}
+  \item {\texorpdfstring{$\sim$}{\string~}SensorTemperatura}
+    \subitem {SensorTemperatura}, \hyperpage{35}
+
+  \indexspace
+
+  \item {agregarLectura}
+    \subitem {SensorBase}, \hyperpage{25}
+    \subitem {SensorPresion}, \hyperpage{31}
+    \subitem {SensorTemperatura}, \hyperpage{35}
+  \item {agregarSensor}
+    \subitem {GestorSensores}, \hyperpage{10}
+
+  \indexspace
+
+  \item {buscarSensor}
+    \subitem {GestorSensores}, \hyperpage{11}
+
+  \indexspace
+
+  \item {cabeza}
+    \subitem {GestorSensores}, \hyperpage{12}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{19}
+  \item {calcularPromedio}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{15}
+  \item {cantidad}
+    \subitem {GestorSensores}, \hyperpage{12}
+  \item {configurarSerial}
+    \subitem {main.cpp}, \hyperpage{51}
+
+  \indexspace
+
+  \item {dato}
+    \subitem {Nodo$<$ T $>$}, \hyperpage{21}
+
+  \indexspace
+
+  \item {eliminarMinimo}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{15}
+  \item {estaVacia}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{16}
+
+  \indexspace
+
+  \item {GestorSensores}, \hyperpage{7}
+    \subitem {\texorpdfstring{$\sim$}{\string~}GestorSensores}, 
+		\hyperpage{9}
+    \subitem {agregarSensor}, \hyperpage{10}
+    \subitem {buscarSensor}, \hyperpage{11}
+    \subitem {cabeza}, \hyperpage{12}
+    \subitem {cantidad}, \hyperpage{12}
+    \subitem {GestorSensores}, \hyperpage{9}
+    \subitem {listarSensores}, \hyperpage{11}
+    \subitem {obtenerCantidad}, \hyperpage{11}
+    \subitem {procesarTodos}, \hyperpage{11}
+
+  \indexspace
+
+  \item {historial}
+    \subitem {SensorPresion}, \hyperpage{32}
+    \subitem {SensorTemperatura}, \hyperpage{36}
+
+  \indexspace
+
+  \item {imprimir}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{16}
+  \item {imprimirInfo}
+    \subitem {SensorBase}, \hyperpage{26}
+    \subitem {SensorPresion}, \hyperpage{31}
+    \subitem {SensorTemperatura}, \hyperpage{36}
+  \item {insertarAlFinal}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{17}
+
+  \indexspace
+
+  \item {leerLineaSerial}
+    \subitem {main.cpp}, \hyperpage{51}
+  \item {listarSensores}
+    \subitem {GestorSensores}, \hyperpage{11}
+  \item {ListaSensor}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{14}
+  \item {ListaSensor$<$ T $>$}, \hyperpage{13}
+    \subitem {\texorpdfstring{$\sim$}{\string~}ListaSensor}, 
+		\hyperpage{14}
+    \subitem {cabeza}, \hyperpage{19}
+    \subitem {calcularPromedio}, \hyperpage{15}
+    \subitem {eliminarMinimo}, \hyperpage{15}
+    \subitem {estaVacia}, \hyperpage{16}
+    \subitem {imprimir}, \hyperpage{16}
+    \subitem {insertarAlFinal}, \hyperpage{17}
+    \subitem {ListaSensor}, \hyperpage{14}
+    \subitem {obtenerTamaño}, \hyperpage{18}
+    \subitem {operator=}, \hyperpage{18}
+    \subitem {tamaño}, \hyperpage{19}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{52}
+  \item {main.cpp}
+    \subitem {configurarSerial}, \hyperpage{51}
+    \subitem {leerLineaSerial}, \hyperpage{51}
+    \subitem {main}, \hyperpage{52}
+    \subitem {procesarLinea}, \hyperpage{52}
+
+  \indexspace
+
+  \item {Nodo}
+    \subitem {Nodo$<$ T $>$}, \hyperpage{20}
+  \item {Nodo$<$ T $>$}, \hyperpage{19}
+    \subitem {dato}, \hyperpage{21}
+    \subitem {Nodo}, \hyperpage{20}
+    \subitem {siguiente}, \hyperpage{21}
+  \item {NodoSensor}, \hyperpage{21}
+    \subitem {NodoSensor}, \hyperpage{22}
+    \subitem {sensor}, \hyperpage{23}
+    \subitem {siguiente}, \hyperpage{23}
+  \item {nombre}
+    \subitem {SensorBase}, \hyperpage{27}
+
+  \indexspace
+
+  \item {obtenerCantidad}
+    \subitem {GestorSensores}, \hyperpage{11}
+  \item {obtenerNombre}
+    \subitem {SensorBase}, \hyperpage{26}
+  \item {obtenerTamaño}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{18}
+  \item {operator=}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{18}
+
+  \indexspace
+
+  \item {procesarLectura}
+    \subitem {SensorBase}, \hyperpage{26}
+    \subitem {SensorPresion}, \hyperpage{31}
+    \subitem {SensorTemperatura}, \hyperpage{36}
+  \item {procesarLinea}
+    \subitem {main.cpp}, \hyperpage{52}
+  \item {procesarTodos}
+    \subitem {GestorSensores}, \hyperpage{11}
+
+  \indexspace
+
+  \item {sensor}
+    \subitem {NodoSensor}, \hyperpage{23}
+  \item {SensorBase}, \hyperpage{23}
+    \subitem {\texorpdfstring{$\sim$}{\string~}SensorBase}, 
+		\hyperpage{25}
+    \subitem {agregarLectura}, \hyperpage{25}
+    \subitem {imprimirInfo}, \hyperpage{26}
+    \subitem {nombre}, \hyperpage{27}
+    \subitem {obtenerNombre}, \hyperpage{26}
+    \subitem {procesarLectura}, \hyperpage{26}
+    \subitem {SensorBase}, \hyperpage{25}
+  \item {SensorPresion}, \hyperpage{28}
+    \subitem {\texorpdfstring{$\sim$}{\string~}SensorPresion}, 
+		\hyperpage{30}
+    \subitem {agregarLectura}, \hyperpage{31}
+    \subitem {historial}, \hyperpage{32}
+    \subitem {imprimirInfo}, \hyperpage{31}
+    \subitem {procesarLectura}, \hyperpage{31}
+    \subitem {SensorPresion}, \hyperpage{30}
+  \item {SensorTemperatura}, \hyperpage{32}
+    \subitem {\texorpdfstring{$\sim$}{\string~}SensorTemperatura}, 
+		\hyperpage{35}
+    \subitem {agregarLectura}, \hyperpage{35}
+    \subitem {historial}, \hyperpage{36}
+    \subitem {imprimirInfo}, \hyperpage{36}
+    \subitem {procesarLectura}, \hyperpage{36}
+    \subitem {SensorTemperatura}, \hyperpage{34}
+  \item {siguiente}
+    \subitem {Nodo$<$ T $>$}, \hyperpage{21}
+    \subitem {NodoSensor}, \hyperpage{23}
+
+  \indexspace
+
+  \item {tamaño}
+    \subitem {ListaSensor$<$ T $>$}, \hyperpage{19}
+
+\end{theindex}

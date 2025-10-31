@@ -1,0 +1,5 @@
+<map id="SensorTemperatura" name="SensorTemperatura">
+<area shape="rect" id="Node000001" title="Sensor que maneja temperaturas en formato float." alt="" coords="5,219,181,364"/>
+<area shape="rect" id="Node000002" href="$classSensorBase.html" title="Clase abstracta que representa un sensor genérico." alt="" coords="22,5,165,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,185,96,218,91,218,91,185"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="SensorTemperatura" name="SensorTemperatura">
+<area shape="rect" id="Node000001" title="Sensor que maneja temperaturas en formato float." alt="" coords="10,441,186,587"/>
+<area shape="rect" id="Node000002" href="$classSensorBase.html" title="Clase abstracta que representa un sensor genérico." alt="" coords="5,173,148,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,352,95,441,89,441,82,352"/>
+<area shape="rect" id="Node000003" href="$classListaSensor.html" title=" " alt="" coords="173,133,325,379"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,380,151,429,146,426,175,378"/>
+<area shape="rect" id="Node000004" href="$structNodo.html" title=" " alt="" coords="195,5,302,71"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,71,251,117,246,117,246,71"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="303,24,321,27,329,38,320,49,316,45,323,38,318,32,302,29"/>
+</map>

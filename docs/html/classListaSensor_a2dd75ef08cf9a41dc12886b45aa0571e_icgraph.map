@@ -1,0 +1,7 @@
+<map id="ListaSensor::estaVacia" name="ListaSensor::estaVacia">
+<area shape="rect" id="Node000001" title="Verifica si la lista está vacía." alt="" coords="280,35,448,60"/>
+<area shape="rect" id="Node000002" href="$classSensorPresion.html#aff696aceb5e619529f911311a35d3c76" title="Procesa las lecturas calculando el promedio." alt="" coords="5,5,232,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,38,225,33,226,28,267,33"/>
+<area shape="rect" id="Node000003" href="$classSensorTemperatura.html#a36227dc500c6f8be7866cb0f396894b3" title="Procesa las lecturas: elimina mínimo y calcula promedio." alt="" coords="41,55,197,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,61,197,69,196,64,266,56"/>
+</map>

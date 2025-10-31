@@ -1,0 +1,320 @@
+\doxysection{Lista\+Sensor\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classListaSensor}{}\label{classListaSensor}\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+
+
+Lista Enlazada Simple Genérica.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+Sensor.\+h$>$}
+
+
+
+Collaboration diagram for Lista\+Sensor\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classListaSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classListaSensor_add555365175bf2140b81b9a2b5a303f5}{Lista\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classListaSensor_a1f0e57e514a2624a2473795bbd8fec8d}{\texorpdfstring{$\sim$}{\string~}\+Lista\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classListaSensor_a81b2253c4b18038c2b9f823d5e244227}{Lista\+Sensor}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}} \&\mbox{\hyperlink{structNodo}{otra}})
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classListaSensor}{Lista\+Sensor}} \& \mbox{\hyperlink{classListaSensor_acd2b457d8d9fc55aeb832fd01c00f5a4}{operator=}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}} \&\mbox{\hyperlink{structNodo}{otra}})
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classListaSensor_a19bd2eacef34c5e0c2fc6ba142138dcd}{insertar\+Al\+Final}} (T \mbox{\hyperlink{structNodo}{valor}})
+\begin{DoxyCompactList}\small\item\em Inserta un elemento al final de la lista. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classListaSensor_a9cd368481187ad8a4faf79db7810086b}{calcular\+Promedio}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Calcula el promedio de todos los valores. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classListaSensor_a6eb996057c9c1feabb5ac94a4fb4c69b}{eliminar\+Minimo}} ()
+\begin{DoxyCompactList}\small\item\em Encuentra y elimina el valor más bajo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classListaSensor_a11f84bbbda6299d28a3018eefeeb5a02}{imprimir}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Imprime todos los elementos de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{classListaSensor_af38b54d48067b68b06a0e9d31b93c4a7}{obtener\+Tamaño}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el tamaño de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{bool}} \mbox{\hyperlink{classListaSensor_a2dd75ef08cf9a41dc12886b45aa0571e}{esta\+Vacia}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Verifica si la lista está vacía. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classListaSensor_a7e0c7cd9a3fd891df2989fc501b0d235}{cabeza}}
+\begin{DoxyCompactList}\small\item\em Puntero al primer nodo de la lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{classListaSensor_ae559d697d74bec1474f4d1c87f694bec}{tamaño}}
+\begin{DoxyCompactList}\small\item\em Contador de elementos en la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$\mbox{\hyperlink{structNodo}{typename}} T$>$\newline
+class Lista\+Sensor$<$ T $>$}
+Lista Enlazada Simple Genérica. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Tipo de dato que almacenará la lista\\
+\hline
+\end{DoxyTemplParams}
+Ejemplo\+: En los vagones de tren\+:
+\begin{DoxyItemize}
+\item \textquotesingle{}cabeza\textquotesingle{} es el primer vagón
+\item Cada vagón sabe cuál es el siguiente
+\item El último vagón apunta a nullptr (fin de la lista) 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classListaSensor_add555365175bf2140b81b9a2b5a303f5}\label{classListaSensor_add555365175bf2140b81b9a2b5a303f5} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!ListaSensor@{ListaSensor}}
+\index{ListaSensor@{ListaSensor}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListaSensor()}{ListaSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\mbox{\hyperlink{classListaSensor}{\+::\+Lista\+Sensor}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor por defecto. 
+
+CONCEPTO\+: Inicializamos la lista vacía. cabeza = nullptr significa "{}no hay ningún nodo todavía"{} \Hypertarget{classListaSensor_a1f0e57e514a2624a2473795bbd8fec8d}\label{classListaSensor_a1f0e57e514a2624a2473795bbd8fec8d} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!````~ListaSensor@{\texorpdfstring{$\sim$}{\string~}ListaSensor}}
+\index{````~ListaSensor@{\texorpdfstring{$\sim$}{\string~}ListaSensor}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ListaSensor()}{\string~ListaSensor()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{classListaSensor}{Lista\+Sensor}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+RAZÓN\+: Cuando la lista se destruye, debemos liberar TODOS los nodos que creamos con \textquotesingle{}new\textquotesingle{}. Si no lo hacemos, la memoria queda ocupada y hay fuga de memoria.
+
+PROCESO\+:
+\begin{DoxyEnumerate}
+\item Empezamos desde la cabeza
+\item Guardamos el siguiente antes de borrar el actual
+\item Liberamos el nodo actual
+\item Avanzamos al siguiente
+\item Repetimos hasta llegar a nullptr 
+\end{DoxyEnumerate}\Hypertarget{classListaSensor_a81b2253c4b18038c2b9f823d5e244227}\label{classListaSensor_a81b2253c4b18038c2b9f823d5e244227} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!ListaSensor@{ListaSensor}}
+\index{ListaSensor@{ListaSensor}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ListaSensor()}{ListaSensor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\mbox{\hyperlink{classListaSensor}{\+::\+Lista\+Sensor}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & Lista a copiar\\
+\hline
+\end{DoxyParams}
+RAZÓN\+: Si hacemos \doxylink{classListaSensor}{Lista\+Sensor$<$int$>$} copia = original; necesitamos crear NUEVOS nodos, no copiar los punteros. Si copiáramos solo punteros, ambas listas compartirían los mismos nodos, lo que seria un PROBLEMA al destruir porque la eliminación se hara dos veces a el mismo elemento lo cual causará error 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classListaSensor_a9cd368481187ad8a4faf79db7810086b}\label{classListaSensor_a9cd368481187ad8a4faf79db7810086b} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!calcularPromedio@{calcularPromedio}}
+\index{calcularPromedio@{calcularPromedio}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{calcularPromedio()}{calcularPromedio()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+T \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::calcular\+Promedio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcula el promedio de todos los valores. 
+
+\begin{DoxyReturn}{Returns}
+Promedio de tipo T
+\end{DoxyReturn}
+RAZÓN\+: Necesitamos procesar los datos, que pueden ser int o float. Esta es una operación común en sensores\+: obtener el valor promedio de las lecturas. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classListaSensor_a9cd368481187ad8a4faf79db7810086b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classListaSensor_a6eb996057c9c1feabb5ac94a4fb4c69b}\label{classListaSensor_a6eb996057c9c1feabb5ac94a4fb4c69b} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!eliminarMinimo@{eliminarMinimo}}
+\index{eliminarMinimo@{eliminarMinimo}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{eliminarMinimo()}{eliminarMinimo()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+T \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::eliminar\+Minimo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Encuentra y elimina el valor más bajo. 
+
+\begin{DoxyReturn}{Returns}
+El valor eliminado
+\end{DoxyReturn}
+PROCESO\+:
+\begin{DoxyEnumerate}
+\item Recorrer la lista para encontrar el mínimo
+\item Guardar referencia al nodo anterior
+\item Reenlazar\+: anterior-\/\texorpdfstring{$>$}{>}siguiente = minimo-\/\texorpdfstring{$>$}{>}siguiente
+\item Liberar el nodo del mínimo 
+\end{DoxyEnumerate}Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classListaSensor_a6eb996057c9c1feabb5ac94a4fb4c69b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classListaSensor_a2dd75ef08cf9a41dc12886b45aa0571e}\label{classListaSensor_a2dd75ef08cf9a41dc12886b45aa0571e} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!estaVacia@{estaVacia}}
+\index{estaVacia@{estaVacia}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{estaVacia()}{estaVacia()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{bool}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::esta\+Vacia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifica si la lista está vacía. 
+
+\begin{DoxyReturn}{Returns}
+true si está vacía, false en caso contrario 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classListaSensor_a2dd75ef08cf9a41dc12886b45aa0571e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classListaSensor_a11f84bbbda6299d28a3018eefeeb5a02}\label{classListaSensor_a11f84bbbda6299d28a3018eefeeb5a02} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::imprimir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime todos los elementos de la lista. 
+
+RAZÓN\+: Para depuración y verificación visual de los datos Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classListaSensor_a11f84bbbda6299d28a3018eefeeb5a02_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classListaSensor_a19bd2eacef34c5e0c2fc6ba142138dcd}\label{classListaSensor_a19bd2eacef34c5e0c2fc6ba142138dcd} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!insertarAlFinal@{insertarAlFinal}}
+\index{insertarAlFinal@{insertarAlFinal}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insertarAlFinal()}{insertarAlFinal()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::insertar\+Al\+Final (\begin{DoxyParamCaption}\item[{T}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserta un elemento al final de la lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Dato a insertar\\
+\hline
+\end{DoxyParams}
+PROCESO\+: Caso 1\+: Lista vacía (cabeza == nullptr)
+\begin{DoxyItemize}
+\item El nuevo nodo se convierte en la cabeza
+\end{DoxyItemize}
+
+Caso 2\+: Lista con elementos
+\begin{DoxyItemize}
+\item Recorremos hasta el último nodo
+\item Enganchamos el nuevo nodo al final 
+\end{DoxyItemize}Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classListaSensor_a19bd2eacef34c5e0c2fc6ba142138dcd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classListaSensor_af38b54d48067b68b06a0e9d31b93c4a7}\label{classListaSensor_af38b54d48067b68b06a0e9d31b93c4a7} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!obtenerTamaño@{obtenerTamaño}}
+\index{obtenerTamaño@{obtenerTamaño}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{obtenerTamaño()}{obtenerTamaño()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::obtener\+Tamaño (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el tamaño de la lista. 
+
+\begin{DoxyReturn}{Returns}
+Número de elementos 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classListaSensor_af38b54d48067b68b06a0e9d31b93c4a7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classListaSensor_acd2b457d8d9fc55aeb832fd01c00f5a4}\label{classListaSensor_acd2b457d8d9fc55aeb832fd01c00f5a4} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{classListaSensor}{Lista\+Sensor}} \& \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\mbox{\hyperlink{structNodo}{\+::operator}}= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & Lista a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia a esta lista
+\end{DoxyReturn}
+RAZÓN\+: Para manejar lista1 = lista2; Debemos\+:
+\begin{DoxyItemize}
+\item Limpiar lista1
+\item Copiar contenido de lista2 
+\end{DoxyItemize}
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classListaSensor_a7e0c7cd9a3fd891df2989fc501b0d235}\label{classListaSensor_a7e0c7cd9a3fd891df2989fc501b0d235} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!cabeza@{cabeza}}
+\index{cabeza@{cabeza}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cabeza}{cabeza}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{Nodo}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::cabeza\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Puntero al primer nodo de la lista. 
+
+\Hypertarget{classListaSensor_ae559d697d74bec1474f4d1c87f694bec}\label{classListaSensor_ae559d697d74bec1474f4d1c87f694bec} 
+\index{ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}!tamaño@{tamaño}}
+\index{tamaño@{tamaño}!ListaSensor$<$ T $>$@{ListaSensor$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{tamaño}{tamaño}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{classListaSensor}{Lista\+Sensor}}$<$ T $>$\+::tamaño\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contador de elementos en la lista. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gina/\+Documentos/\+Est\+Datos/\+Actividades/\+U2-\/\+Act1-\/listasenlazadas/include/\mbox{\hyperlink{ListaSensor_8h}{Lista\+Sensor.\+h}}\end{DoxyCompactItemize}

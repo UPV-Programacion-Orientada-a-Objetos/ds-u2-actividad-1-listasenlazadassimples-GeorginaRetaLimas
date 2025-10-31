@@ -1,0 +1,10 @@
+<map id="/home/gina/Documentos/EstDatos/Actividades/U2&#45;Act1&#45;listasenlazadas/include/GestorSensores.h" name="/home/gina/Documentos/EstDatos/Actividades/U2&#45;Act1&#45;listasenlazadas/include/GestorSensores.h">
+<area shape="rect" id="Node000001" title="Sistema de gestión polimórfica de sensores." alt="" coords="12,5,203,75"/>
+<area shape="rect" id="Node000002" href="$SensorBase_8h.html" title="Clase base abstracta para todos los tipos de sensores." alt="" coords="5,123,116,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,76,75,111,70,109,88,74"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="114,196,194,221"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="119,74,150,182,145,183,114,76"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="23,196,90,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,148,61,183,55,182,57,148"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="77,146,130,185,126,190,74,150"/>
+</map>

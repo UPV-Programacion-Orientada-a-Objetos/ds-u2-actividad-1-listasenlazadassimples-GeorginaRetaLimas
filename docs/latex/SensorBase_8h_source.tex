@@ -1,0 +1,40 @@
+\doxysection{Sensor\+Base.\+h}
+\hypertarget{SensorBase_8h_source}{}\label{SensorBase_8h_source}\index{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorBase.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorBase.h}}
+\mbox{\hyperlink{SensorBase_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ SENSOR\_BASE\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ SENSOR\_BASE\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSensorBase}{SensorBase}}\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}[50];}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{classSensorBase_a7674c56935894725090585ce565514a8}{SensorBase}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodo}{strcpy}}(\mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}},\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[SensorBase]\ Sensor\ '"{}}\ <<\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}\ <<\ \textcolor{stringliteral}{"{}'\ creado"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSensorBase_acb58cfa69a0635dc3ef5ccb1590dc261}{\string~SensorBase}}()\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[SensorBase]\ Destructor\ base\ llamado\ para\ '"{}}\ <<\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}\ <<\ \textcolor{stringliteral}{"{}'.\(\backslash\)n"{}};}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{procesarLectura}}()\ =\ 0;}
+\DoxyCodeLine{00082\ \ \ \ \ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSensorBase_a7cf3aeb12b330c500e2a5136fa020eec}{imprimirInfo}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00090\ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSensorBase_adfcce9176e571b524e9cd03e507e94d4}{agregarLectura}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structNodo}{valor}})\ =\ 0;}
+\DoxyCodeLine{00100\ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classSensorBase_adb19329ba35a359c664b66575aab7552}{obtenerNombre}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}};}
+\DoxyCodeLine{00110\ \ \ \ \ \}}
+\DoxyCodeLine{00111\ \};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+<map id="ListaSensor::eliminarMinimo" name="ListaSensor::eliminarMinimo">
+<area shape="rect" id="Node000001" title="Encuentra y elimina el valor más bajo." alt="" coords="209,13,417,38"/>
+<area shape="rect" id="Node000002" href="$classSensorTemperatura.html#a36227dc500c6f8be7866cb0f396894b3" title="Procesa las lecturas: elimina mínimo y calcula promedio." alt="" coords="5,5,161,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,28,161,28,161,23,195,23"/>
+</map>

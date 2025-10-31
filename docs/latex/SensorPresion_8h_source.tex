@@ -1,0 +1,61 @@
+\doxysection{Sensor\+Presion.\+h}
+\hypertarget{SensorPresion_8h_source}{}\label{SensorPresion_8h_source}\index{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorPresion.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/SensorPresion.h}}
+\mbox{\hyperlink{SensorPresion_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ SENSOR\_PRESION\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ SENSOR\_PRESION\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SensorBase_8h}{SensorBase.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ListaSensor_8h}{ListaSensor.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ para\ convertir\ de\ string\ a\ int}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <cstdlib>}\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSensorPresion}{SensorPresion}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classSensorBase}{SensorBase}}\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{structNodo}{ListaSensor<int>}}\ \mbox{\hyperlink{classSensorPresion_a222d29d92733620c0f3f34928f97ce85}{historial}};}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{classSensorPresion_a9febd6b22421efe40ba531d5137bedfd}{SensorPresion}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keywordtype}{id})\ :\ \mbox{\hyperlink{classSensorBase}{SensorBase}}(\mbox{\hyperlink{structNodo}{id}})\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[SensorPresion]\ Sensor\ de\ presión\ '"{}}\ <<\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}\ <<\ \textcolor{stringliteral}{"{}'\ inicializado."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{classSensorPresion_aa82718b7990902c257ebcd0234e1ed46}{\string~SensorPresion}}()\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ [Destructor\ Sensor\ "{}}\ <<\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}\ <<\ \textcolor{stringliteral}{"{}]\ Liberando\ Lista\ Interna..."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSensorPresion_a842b0bcefce4fbfd1e6ef14ce0fe4117}{agregarLectura}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{structNodo}{valor}})\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ String\ a\ entero}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structNodo}{presion}}\ =\ \mbox{\hyperlink{structNodo}{atoi}}(\mbox{\hyperlink{structNodo}{valor}});\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSensorPresion_a222d29d92733620c0f3f34928f97ce85}{historial}}.\mbox{\hyperlink{classListaSensor_a19bd2eacef34c5e0c2fc6ba142138dcd}{insertarAlFinal}}(\mbox{\hyperlink{structNodo}{presion}});}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[SensorPresion\ "{}}\ <<\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}\ <<\ \textcolor{stringliteral}{"{}]\ Lectura\ agregada:\ "{}}\ <<\ \mbox{\hyperlink{structNodo}{presion}}\ <<\ \textcolor{stringliteral}{"{}\ hPa"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSensorPresion_aff696aceb5e619529f911311a35d3c76}{procesarLectura}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/>\ Procesando\ Sensor\ "{}}\ <<\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}\ <<\ \textcolor{stringliteral}{"{}..."{}};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Si\ no\ hay\ registros}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classSensorPresion_a222d29d92733620c0f3f34928f97ce85}{historial}}.\mbox{\hyperlink{classListaSensor_a2dd75ef08cf9a41dc12886b45aa0571e}{estaVacia}}())\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[SensorPresion]\ No\ hay\ lecturas\ para\ procesar."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structNodo}{promedio}}\ =\ \mbox{\hyperlink{classSensorPresion_a222d29d92733620c0f3f34928f97ce85}{historial}}.\mbox{\hyperlink{classListaSensor_a9cd368481187ad8a4faf79db7810086b}{calcularPromedio}}();}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[Sensor\ Presion]\ Promedio\ calculado\ sobre\ "{}}\ <<\ \mbox{\hyperlink{classSensorPresion_a222d29d92733620c0f3f34928f97ce85}{historial}}.\mbox{\hyperlink{classListaSensor_af38b54d48067b68b06a0e9d31b93c4a7}{obtenerTamaño}}()\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ lectura(s):\ "{}}\ <<\ \mbox{\hyperlink{structNodo}{promedio}}\ <<\ \textcolor{stringliteral}{"{}\ hPa."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00101\ \ \ \ \ \}}
+\DoxyCodeLine{00102\ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSensorPresion_ad5181690dfb24946217e882606f04428}{imprimirInfo}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n===\ Sensor\ de\ Presión\ ==="{}}\ <<\ std::endl;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}ID:\ "{}}\ <<\ \mbox{\hyperlink{classSensorBase_a843ba88809ed7b78942a0a4b1c484cf5}{nombre}}\ <<\ std::endl;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Tipo:\ Presión\ (int)"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Lecturas\ almacenadas:\ "{}}\ <<\ \mbox{\hyperlink{classSensorPresion_a222d29d92733620c0f3f34928f97ce85}{historial}}.\mbox{\hyperlink{classListaSensor_af38b54d48067b68b06a0e9d31b93c4a7}{obtenerTamaño}}()\ <<\ std::endl;}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSensorPresion_a222d29d92733620c0f3f34928f97ce85}{historial}}.\mbox{\hyperlink{classListaSensor_a11f84bbbda6299d28a3018eefeeb5a02}{imprimir}}();}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}========================="{}}\ <<\ std::endl;}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="ListaSensor::calcularPromedio" name="ListaSensor::calcularPromedio">
+<area shape="rect" id="Node000001" title="Calcula el promedio de todos los valores." alt="" coords="280,35,499,60"/>
+<area shape="rect" id="Node000002" href="$classSensorPresion.html#aff696aceb5e619529f911311a35d3c76" title="Procesa las lecturas calculando el promedio." alt="" coords="5,5,232,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,37,232,33,232,28,267,31"/>
+<area shape="rect" id="Node000003" href="$classSensorTemperatura.html#a36227dc500c6f8be7866cb0f396894b3" title="Procesa las lecturas: elimina mínimo y calcula promedio." alt="" coords="41,55,197,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,63,197,70,197,65,266,57"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="SensorBase::imprimirInfo" name="SensorBase::imprimirInfo">
+<area shape="rect" id="Node000001" title="Imprime información del sensor." alt="" coords="277,5,464,31"/>
+<area shape="rect" id="Node000002" href="$classGestorSensores.html#ad4afb5e96ac8e98540adb59ed7a7b551" title="Imprime información de todos los sensores." alt="" coords="5,5,229,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,21,229,21,229,15,263,15"/>
+</map>

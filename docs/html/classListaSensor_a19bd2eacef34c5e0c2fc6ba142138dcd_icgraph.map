@@ -1,0 +1,11 @@
+<map id="ListaSensor::insertarAlFinal" name="ListaSensor::insertarAlFinal">
+<area shape="rect" id="Node000001" title="Inserta un elemento al final de la lista." alt="" coords="273,92,472,117"/>
+<area shape="rect" id="Node000002" href="$classSensorPresion.html#a842b0bcefce4fbfd1e6ef14ce0fe4117" title="Agrega una lectura de presión." alt="" coords="5,5,225,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="331,89,224,46,179,33,180,28,226,41,333,84"/>
+<area shape="rect" id="Node000003" href="$classSensorTemperatura.html#aee3fe454fb7aa0183f2b26e7c2b8dffa" title="Agrega una lectura de temperatura a la lista." alt="" coords="37,55,193,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,94,193,87,194,82,260,89"/>
+<area shape="rect" id="Node000004" href="$classListaSensor.html#a81b2253c4b18038c2b9f823d5e244227" title="Constructor de copia." alt="" coords="25,120,205,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="260,120,206,126,205,120,259,114"/>
+<area shape="rect" id="Node000005" href="$classListaSensor.html#acd2b457d8d9fc55aeb832fd01c00f5a4" title="Operador de asignación." alt="" coords="30,169,201,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="327,125,226,159,177,172,176,167,225,154,325,120"/>
+</map>

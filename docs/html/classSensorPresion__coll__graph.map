@@ -1,0 +1,10 @@
+<map id="SensorPresion" name="SensorPresion">
+<area shape="rect" id="Node000001" title="Sensor que maneja presiones en formato enteros." alt="" coords="27,441,169,587"/>
+<area shape="rect" id="Node000002" href="$classSensorBase.html" title="Clase abstracta que representa un sensor genérico." alt="" coords="5,173,148,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,352,95,441,89,441,82,352"/>
+<area shape="rect" id="Node000003" href="$classListaSensor.html" title=" " alt="" coords="173,133,325,379"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,380,151,429,146,426,175,378"/>
+<area shape="rect" id="Node000004" href="$structNodo.html" title=" " alt="" coords="201,5,296,71"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,71,251,117,246,117,246,71"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="297,23,315,27,323,38,314,49,310,45,317,38,312,32,296,29"/>
+</map>

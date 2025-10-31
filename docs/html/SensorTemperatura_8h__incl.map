@@ -1,0 +1,14 @@
+<map id="/home/gina/Documentos/EstDatos/Actividades/U2&#45;Act1&#45;listasenlazadas/include/SensorTemperatura.h" name="/home/gina/Documentos/EstDatos/Actividades/U2&#45;Act1&#45;listasenlazadas/include/SensorTemperatura.h">
+<area shape="rect" id="Node000001" title="Implementación concreta de un sensor de temperatura." alt="" coords="87,5,301,75"/>
+<area shape="rect" id="Node000002" href="$SensorBase_8h.html" title="Clase base abstracta para todos los tipos de sensores." alt="" coords="5,123,116,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,77,90,117,87,112,144,73"/>
+<area shape="rect" id="Node000005" href="$ListaSensor_8h.html" title="Implementación de la Lista Enlazada Simple Genérica para sensores IoT." alt="" coords="140,123,248,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="197,75,197,109,191,109,191,75"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="272,123,337,148"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="236,73,282,111,279,116,232,77"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="27,196,94,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,148,63,182,58,182,58,148"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="135,196,215,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="80,146,146,186,144,191,78,150"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="193,149,184,184,179,182,188,148"/>
+</map>

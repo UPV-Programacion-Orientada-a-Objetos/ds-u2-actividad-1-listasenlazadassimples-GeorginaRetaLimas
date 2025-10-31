@@ -1,0 +1,6 @@
+<map id="NodoSensor" name="NodoSensor">
+<area shape="rect" id="Node000001" title="Nodo para la lista de gestión polimórfica." alt="" coords="18,233,135,299"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="136,252,154,256,162,266,153,276,149,273,157,266,151,260,135,257"/>
+<area shape="rect" id="Node000002" href="$classSensorBase.html" title="Clase abstracta que representa un sensor genérico." alt="" coords="5,5,148,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,171,79,217,74,217,74,171"/>
+</map>

@@ -1,0 +1,111 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Gestor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensores Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{9}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}GestorSensores()}{9}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}$\sim $GestorSensores()}{10}{subsubsection.4.1.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{10}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}agregarSensor()}{10}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}buscarSensor()}{11}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}listarSensores()}{11}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}obtenerCantidad()}{11}{subsubsection.4.1.3.4}%
+\contentsline {subsubsection}{\numberline {4.1.3.5}procesarTodos()}{12}{subsubsection.4.1.3.5}%
+\contentsline {subsection}{\numberline {4.1.4}Member Data Documentation}{12}{subsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}cabeza}{12}{subsubsection.4.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.4.2}cantidad}{12}{subsubsection.4.1.4.2}%
+\contentsline {section}{\numberline {4.2}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor$<$ T $>$ Class Template Reference}{13}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{14}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{14}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}ListaSensor()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{14}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}$\sim $ListaSensor()}{14}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}ListaSensor()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{15}{subsubsection.4.2.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{15}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}calcularPromedio()}{15}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}eliminarMinimo()}{15}{subsubsection.4.2.3.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}estaVacia()}{16}{subsubsection.4.2.3.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.4}imprimir()}{17}{subsubsection.4.2.3.4}%
+\contentsline {subsubsection}{\numberline {4.2.3.5}insertarAlFinal()}{17}{subsubsection.4.2.3.5}%
+\contentsline {subsubsection}{\numberline {4.2.3.6}obtenerTamaño()}{18}{subsubsection.4.2.3.6}%
+\contentsline {subsubsection}{\numberline {4.2.3.7}operator=()}{18}{subsubsection.4.2.3.7}%
+\contentsline {subsection}{\numberline {4.2.4}Member Data Documentation}{19}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}cabeza}{19}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}tamaño}{19}{subsubsection.4.2.4.2}%
+\contentsline {section}{\numberline {4.3}Nodo$<$ T $>$ Struct Template Reference}{19}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{20}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Nodo()}{20}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Member Data Documentation}{21}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}dato}{21}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}siguiente}{21}{subsubsection.4.3.3.2}%
+\contentsline {section}{\numberline {4.4}Nodo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor Struct Reference}{21}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{22}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{22}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}NodoSensor()}{22}{subsubsection.4.4.2.1}%
+\contentsline {subsection}{\numberline {4.4.3}Member Data Documentation}{23}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}sensor}{23}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}siguiente}{23}{subsubsection.4.4.3.2}%
+\contentsline {section}{\numberline {4.5}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{23}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{24}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{25}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}SensorBase()}{25}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}$\sim $SensorBase()}{25}{subsubsection.4.5.2.2}%
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{25}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}agregarLectura()}{25}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}imprimirInfo()}{26}{subsubsection.4.5.3.2}%
+\contentsline {subsubsection}{\numberline {4.5.3.3}obtenerNombre()}{26}{subsubsection.4.5.3.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.4}procesarLectura()}{27}{subsubsection.4.5.3.4}%
+\contentsline {subsection}{\numberline {4.5.4}Member Data Documentation}{27}{subsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.4.1}nombre}{27}{subsubsection.4.5.4.1}%
+\contentsline {section}{\numberline {4.6}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Presion Class Reference}{28}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{30}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{30}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}SensorPresion()}{30}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $SensorPresion()}{31}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{31}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}agregarLectura()}{31}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}imprimirInfo()}{31}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}procesarLectura()}{31}{subsubsection.4.6.3.3}%
+\contentsline {subsection}{\numberline {4.6.4}Member Data Documentation}{32}{subsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.4.1}historial}{32}{subsubsection.4.6.4.1}%
+\contentsline {section}{\numberline {4.7}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temperatura Class Reference}{32}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{34}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{34}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}SensorTemperatura()}{34}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}$\sim $SensorTemperatura()}{35}{subsubsection.4.7.2.2}%
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{35}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}agregarLectura()}{35}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}imprimirInfo()}{36}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}procesarLectura()}{36}{subsubsection.4.7.3.3}%
+\contentsline {subsection}{\numberline {4.7.4}Member Data Documentation}{36}{subsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.4.1}historial}{36}{subsubsection.4.7.4.1}%
+\contentsline {chapter}{\numberline {5}File Documentation}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}/home/gina/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Documentos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Est\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Datos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actividades/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U2-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Act1-\/listasenlazadas/include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Gestor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensores.h File Reference}{37}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{38}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Gestor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensores.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{38}{section.5.2}%
+\contentsline {section}{\numberline {5.3}/home/gina/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Documentos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Est\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Datos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actividades/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U2-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Act1-\/listasenlazadas/include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor.h File Reference}{40}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{41}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}{section.5.4}%
+\contentsline {section}{\numberline {5.5}/home/gina/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Documentos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Est\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Datos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actividades/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U2-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Act1-\/listasenlazadas/include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base.h File Reference}{44}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{45}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{45}{section.5.6}%
+\contentsline {section}{\numberline {5.7}/home/gina/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Documentos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Est\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Datos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actividades/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U2-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Act1-\/listasenlazadas/include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Presion.h File Reference}{45}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{46}{subsection.5.7.1}%
+\contentsline {section}{\numberline {5.8}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Presion.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{47}{section.5.8}%
+\contentsline {section}{\numberline {5.9}/home/gina/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Documentos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Est\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Datos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actividades/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U2-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Act1-\/listasenlazadas/include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temperatura.h File Reference}{47}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{48}{subsection.5.9.1}%
+\contentsline {section}{\numberline {5.10}Sensor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Temperatura.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.5.10}%
+\contentsline {section}{\numberline {5.11}/home/gina/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Documentos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Est\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Datos/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actividades/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}U2-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Act1-\/listasenlazadas/src/main.cpp File Reference}{49}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{50}{subsection.5.11.1}%
+\contentsline {subsection}{\numberline {5.11.2}Function Documentation}{51}{subsection.5.11.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.1}configurarSerial()}{51}{subsubsection.5.11.2.1}%
+\contentsline {subsubsection}{\numberline {5.11.2.2}leerLineaSerial()}{51}{subsubsection.5.11.2.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.3}main()}{52}{subsubsection.5.11.2.3}%
+\contentsline {subsubsection}{\numberline {5.11.2.4}procesarLinea()}{53}{subsubsection.5.11.2.4}%
+\contentsline {chapter}{Index}{55}{section*.63}%

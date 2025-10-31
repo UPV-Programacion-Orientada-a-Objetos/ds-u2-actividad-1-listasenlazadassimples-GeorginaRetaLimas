@@ -1,0 +1,126 @@
+\doxysection{Gestor\+Sensores.\+h}
+\hypertarget{GestorSensores_8h_source}{}\label{GestorSensores_8h_source}\index{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/GestorSensores.h@{/home/gina/Documentos/EstDatos/Actividades/U2-\/Act1-\/listasenlazadas/include/GestorSensores.h}}
+\mbox{\hyperlink{GestorSensores_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ GESTOR\_SENSORES\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ GESTOR\_SENSORES\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SensorBase_8h}{SensorBase.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structNodoSensor}{NodoSensor}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classSensorBase}{SensorBase}}*\ \mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}};\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ \mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}};\ \ }
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{structNodoSensor_ace2beaa5ec92d0563c1ec75eb9b2657b}{NodoSensor}}(\mbox{\hyperlink{classSensorBase}{SensorBase}}*\ s)\ :\ \mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}}(s),\ \mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}}(nullptr)\ \{\}}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGestorSensores}{GestorSensores}}\ \{}
+\DoxyCodeLine{00057\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}};\ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683}{cantidad}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{classGestorSensores_ae5abd15000085e480146f34ac90e87a0}{GestorSensores}}()\ :\ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}}(nullptr),\ \mbox{\hyperlink{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683}{cantidad}}(0)\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n[GestorSensores]\ Sistema\ inicializado."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classGestorSensores_a02439ac8bcc68db7fc97559f80513975}{\string~GestorSensores}}()\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Liberación\ de\ Memoria\ en\ Cascada\ -\/-\/-\/"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ actual\ =\ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (actual\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ siguiente\ =\ actual-\/>\mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}};}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[Destructor\ General]\ Liberando\ Nodo:\ "{}}\ <<\ actual-\/>\mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}}-\/>\mbox{\hyperlink{classSensorBase_adb19329ba35a359c664b66575aab7552}{obtenerNombre}}()\ <<\ std::endl;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Llamamos\ al\ destructor\ polimórfico}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ actual-\/>\mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}};\ \ \textcolor{comment}{//\ Libera\ el\ sensor\ virtual}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ actual;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Libera\ el\ nodo\ de\ gestión}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ actual\ =\ siguiente;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Sistema\ cerrado.\ Memoria\ limpia."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00112\ \ \ \ \ \}}
+\DoxyCodeLine{00113\ \ \ \ \ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGestorSensores_a05c2da9f796c09cc56d7afd84ce1862b}{agregarSensor}}(\mbox{\hyperlink{classSensorBase}{SensorBase}}*\ sensor)\ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ nuevoNodo\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}(sensor);}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}}\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}}\ =\ nuevoNodo;}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[Gestor]\ Primer\ sensor\ registrado:\ "{}}\ <<\ sensor-\/>\mbox{\hyperlink{classSensorBase_adb19329ba35a359c664b66575aab7552}{obtenerNombre}}()\ <<\ std::endl;}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ actual\ =\ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}};}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (actual-\/>\mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}}\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ actual\ =\ actual-\/>\mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}};}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ actual-\/>\mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}}\ =\ nuevoNodo;}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[Gestor]\ Sensor\ agregado:\ "{}}\ <<\ sensor-\/>\mbox{\hyperlink{classSensorBase_adb19329ba35a359c664b66575aab7552}{obtenerNombre}}()\ <<\ std::endl;}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683}{cantidad}}++;}
+\DoxyCodeLine{00147\ \ \ \ \ \}}
+\DoxyCodeLine{00148\ \ \ \ \ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{comment}{//\ Aquí\ es\ donde\ se\ realiza\ la\ busqueda}}
+\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{classSensorBase}{SensorBase}}*\ \mbox{\hyperlink{classGestorSensores_a1ed1aa26dbebec793c30ff27c648883b}{buscarSensor}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ actual\ =\ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}};}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Iteracion\ para\ busqueda}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (actual\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Compara\ los\ valores\ y\ retorna\ 0\ si\ es\ verdadero}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (strcmp(actual-\/>\mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}}-\/>\mbox{\hyperlink{classSensorBase_adb19329ba35a359c664b66575aab7552}{obtenerNombre}}(),\ \textcolor{keywordtype}{id})\ ==\ 0)\ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ actual-\/>\mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}};}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Si\ no\ lo\ es\ itera\ con\ el\ siguiente\ elemento\ de\ la\ lista}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ actual\ =\ actual-\/>\mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}};}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ No\ se\ encontro}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+\DoxyCodeLine{00178\ \ \ \ \ }
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGestorSensores_a7a89dd977d44b6c9278f04d2738905de}{procesarTodos}}()\ \{}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}}\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[Gestor]\ No\ hay\ sensores\ para\ procesar."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ Ejecutando\ Polimorfismo\ -\/-\/-\/"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ actual\ =\ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}};}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (actual\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Aqui\ se\ aplica\ el\ polimorfismo\ llamando\ la\ función\ correcta}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ actual-\/>\mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}}-\/>\mbox{\hyperlink{classSensorBase_a7fbc0a5b444f7d16cd60ba873b8ec8e4}{procesarLectura}}();}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ actual\ =\ actual-\/>\mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}};}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00208\ \ \ \ \ \}}
+\DoxyCodeLine{00209\ \ \ \ \ }
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGestorSensores_ad4afb5e96ac8e98540adb59ed7a7b551}{listarSensores}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}}\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}[Gestor]\ No\ hay\ sensores\ registrados."{}}\ <<\ std::endl;}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n===\ Lista\ de\ Sensores\ Registrados\ ==="{}}\ <<\ std::endl;}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Total\ de\ sensores:\ "{}}\ <<\ \mbox{\hyperlink{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683}{cantidad}}\ \ <<\ std::endl\ <<\ std::endl;}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNodoSensor}{NodoSensor}}*\ actual\ =\ \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}};}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ index\ =\ 1;}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (actual\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ index++\ <<\ \textcolor{stringliteral}{"{}.\ "{}};}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ actual-\/>\mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}}-\/>\mbox{\hyperlink{classSensorBase_a7cf3aeb12b330c500e2a5136fa020eec}{imprimirInfo}}();}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ actual\ =\ actual-\/>\mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}};}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00230\ \ \ \ \ \}}
+\DoxyCodeLine{00231\ \ \ \ \ }
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGestorSensores_a911730027f537e909f502bd146fb04ab}{obtenerCantidad}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683}{cantidad}};}
+\DoxyCodeLine{00238\ \ \ \ \ \}}
+\DoxyCodeLine{00239\ \};}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

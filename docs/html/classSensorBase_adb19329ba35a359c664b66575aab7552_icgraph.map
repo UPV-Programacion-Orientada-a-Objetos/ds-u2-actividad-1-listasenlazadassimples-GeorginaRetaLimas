@@ -1,0 +1,9 @@
+<map id="SensorBase::obtenerNombre" name="SensorBase::obtenerNombre">
+<area shape="rect" id="Node000001" title="Obtiene el nombre del sensor." alt="" coords="299,55,507,80"/>
+<area shape="rect" id="Node000002" href="$classGestorSensores.html#a05c2da9f796c09cc56d7afd84ce1862b" title="Agrega un nuevo sensor a la lista de gestión." alt="" coords="15,5,241,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,55,199,33,200,28,318,50"/>
+<area shape="rect" id="Node000003" href="$classGestorSensores.html#a1ed1aa26dbebec793c30ff27c648883b" title="Busca un sensor por su ID." alt="" coords="19,55,237,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,70,238,70,238,65,285,65"/>
+<area shape="rect" id="Node000004" href="$classGestorSensores.html#a02439ac8bcc68db7fc97559f80513975" title="Destructor &#45; Libera TODOS los sensores y sus listas internas." alt="" coords="5,104,251,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="318,85,200,107,199,101,317,80"/>
+</map>

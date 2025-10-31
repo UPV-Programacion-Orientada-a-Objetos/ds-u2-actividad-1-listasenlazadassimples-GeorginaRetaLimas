@@ -1,0 +1,96 @@
+\doxysection{Nodo\+Sensor Struct Reference}
+\hypertarget{structNodoSensor}{}\label{structNodoSensor}\index{NodoSensor@{NodoSensor}}
+
+
+\doxylink{structNodo}{Nodo} para la lista de gestión polimórfica.  
+
+
+
+
+{\ttfamily \#include $<$Gestor\+Sensores.\+h$>$}
+
+
+
+Collaboration diagram for Nodo\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{structNodoSensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodoSensor_ace2beaa5ec92d0563c1ec75eb9b2657b}{Nodo\+Sensor}} (\mbox{\hyperlink{classSensorBase}{Sensor\+Base}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{s}})
+\begin{DoxyCompactList}\small\item\em Constructor del nodo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensorBase}{Sensor\+Base}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}{sensor}}
+\begin{DoxyCompactList}\small\item\em Puntero polimórfico al sensor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodoSensor}{Nodo\+Sensor}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}{siguiente}}
+\begin{DoxyCompactList}\small\item\em Siguiente nodo en la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{structNodo}{Nodo} para la lista de gestión polimórfica. 
+
+DIFERENCIA CLAVE con Nodo$<$\+T$>$\+:
+\begin{DoxyItemize}
+\item Este nodo NO es genérico
+\item Almacena específicamente punteros a \doxylink{classSensorBase}{Sensor\+Base}
+\item Permite el polimorfismo\+: guardar Sensor\+Temperatura\texorpdfstring{$\ast$}{*} y Sensor\+Presion\texorpdfstring{$\ast$}{*} juntos
+\end{DoxyItemize}
+
+CONCEPTO -\/ Puntero a Clase Base\+: Sensor\+Base\texorpdfstring{$\ast$}{*} puede apuntar a\+:
+\begin{DoxyItemize}
+\item \doxylink{classSensorTemperatura}{Sensor\+Temperatura}
+\item \doxylink{classSensorPresion}{Sensor\+Presion}
+\item Cualquier futuro sensor que herede de \doxylink{classSensorBase}{Sensor\+Base} 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structNodoSensor_ace2beaa5ec92d0563c1ec75eb9b2657b}\label{structNodoSensor_ace2beaa5ec92d0563c1ec75eb9b2657b} 
+\index{NodoSensor@{NodoSensor}!NodoSensor@{NodoSensor}}
+\index{NodoSensor@{NodoSensor}!NodoSensor@{NodoSensor}}
+\doxysubsubsection{\texorpdfstring{NodoSensor()}{NodoSensor()}}
+{\footnotesize\ttfamily Nodo\+Sensor\+::\+Nodo\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensorBase}{Sensor\+Base}} \texorpdfstring{$\ast$}{*}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor del nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Puntero al sensor a almacenar \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d}\label{structNodoSensor_ae0b68b437f590a4ba1a8c5996a41332d} 
+\index{NodoSensor@{NodoSensor}!sensor@{sensor}}
+\index{sensor@{sensor}!NodoSensor@{NodoSensor}}
+\doxysubsubsection{\texorpdfstring{sensor}{sensor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSensorBase}{Sensor\+Base}}\texorpdfstring{$\ast$}{*} Nodo\+Sensor\+::sensor}
+
+
+
+Puntero polimórfico al sensor. 
+
+\Hypertarget{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d}\label{structNodoSensor_a2f74bd43191c5e37a31ab288737ac40d} 
+\index{NodoSensor@{NodoSensor}!siguiente@{siguiente}}
+\index{siguiente@{siguiente}!NodoSensor@{NodoSensor}}
+\doxysubsubsection{\texorpdfstring{siguiente}{siguiente}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodoSensor}{Nodo\+Sensor}}\texorpdfstring{$\ast$}{*} Nodo\+Sensor\+::siguiente}
+
+
+
+Siguiente nodo en la lista. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gina/\+Documentos/\+Est\+Datos/\+Actividades/\+U2-\/\+Act1-\/listasenlazadas/include/\mbox{\hyperlink{GestorSensores_8h}{Gestor\+Sensores.\+h}}\end{DoxyCompactItemize}

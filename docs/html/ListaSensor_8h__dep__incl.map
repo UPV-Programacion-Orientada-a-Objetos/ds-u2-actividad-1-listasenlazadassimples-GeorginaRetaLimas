@@ -1,0 +1,10 @@
+<map id="/home/gina/Documentos/EstDatos/Actividades/U2&#45;Act1&#45;listasenlazadas/include/ListaSensor.h" name="/home/gina/Documentos/EstDatos/Actividades/U2&#45;Act1&#45;listasenlazadas/include/ListaSensor.h">
+<area shape="rect" id="Node000001" title="Implementación de la Lista Enlazada Simple Genérica para sensores IoT." alt="" coords="117,5,301,75"/>
+<area shape="rect" id="Node000002" href="$SensorPresion_8h.html" title="Implementación concreta de un sensor de presión." alt="" coords="5,123,189,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,87,132,124,128,121,165,83"/>
+<area shape="rect" id="Node000004" href="$SensorTemperatura_8h.html" title="Implementación concreta de un sensor de temperatura." alt="" coords="214,123,429,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="254,83,290,121,287,124,250,87"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Programa principal del Sistema de Gestión Polimórfica de Sensores para IoT." alt="" coords="117,240,301,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,200,178,238,175,242,138,204"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="281,204,244,242,240,238,277,200"/>
+</map>

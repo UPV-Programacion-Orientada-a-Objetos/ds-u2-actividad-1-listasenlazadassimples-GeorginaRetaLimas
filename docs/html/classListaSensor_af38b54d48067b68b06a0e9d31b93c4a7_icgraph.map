@@ -1,0 +1,11 @@
+<map id="ListaSensor::obtenerTamaño" name="ListaSensor::obtenerTamaño">
+<area shape="rect" id="Node000001" title="Obtiene el tamaño de la lista." alt="" coords="280,92,487,117"/>
+<area shape="rect" id="Node000002" href="$classSensorPresion.html#ad5181690dfb24946217e882606f04428" title="Imprime información detallada del sensor." alt="" coords="17,5,220,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,89,289,67,231,46,184,33,186,28,233,41,291,62,344,84"/>
+<area shape="rect" id="Node000003" href="$classSensorTemperatura.html#a95a263967c5f9a55da09be3b11c27c86" title="Imprime información del sensor y sus lecturas." alt="" coords="41,55,197,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,94,197,87,197,81,267,89"/>
+<area shape="rect" id="Node000004" href="$classSensorPresion.html#aff696aceb5e619529f911311a35d3c76" title="Procesa las lecturas calculando el promedio." alt="" coords="5,120,232,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="267,120,232,123,232,118,266,114"/>
+<area shape="rect" id="Node000005" href="$classSensorTemperatura.html#a36227dc500c6f8be7866cb0f396894b3" title="Procesa las lecturas: elimina mínimo y calcula promedio." alt="" coords="41,170,197,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="334,125,233,159,190,172,189,167,231,154,333,120"/>
+</map>

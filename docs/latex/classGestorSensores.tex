@@ -1,0 +1,231 @@
+\doxysection{Gestor\+Sensores Class Reference}
+\hypertarget{classGestorSensores}{}\label{classGestorSensores}\index{GestorSensores@{GestorSensores}}
+
+
+Administrador central de todos los sensores del sistema.  
+
+
+
+
+{\ttfamily \#include $<$Gestor\+Sensores.\+h$>$}
+
+
+
+Collaboration diagram for Gestor\+Sensores\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classGestorSensores__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGestorSensores_ae5abd15000085e480146f34ac90e87a0}{Gestor\+Sensores}} ()
+\begin{DoxyCompactList}\small\item\em Constructor del gestor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGestorSensores_a02439ac8bcc68db7fc97559f80513975}{\texorpdfstring{$\sim$}{\string~}\+Gestor\+Sensores}} ()
+\begin{DoxyCompactList}\small\item\em Destructor -\/ Libera TODOS los sensores y sus listas internas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classGestorSensores_a05c2da9f796c09cc56d7afd84ce1862b}{agregar\+Sensor}} (\mbox{\hyperlink{classSensorBase}{Sensor\+Base}} \texorpdfstring{$\ast$}{*}sensor)
+\begin{DoxyCompactList}\small\item\em Agrega un nuevo sensor a la lista de gestión. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSensorBase}{Sensor\+Base}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGestorSensores_a1ed1aa26dbebec793c30ff27c648883b}{buscar\+Sensor}} (\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structNodo}{id}})
+\begin{DoxyCompactList}\small\item\em Busca un sensor por su ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classGestorSensores_a7a89dd977d44b6c9278f04d2738905de}{procesar\+Todos}} ()
+\begin{DoxyCompactList}\small\item\em Procesa todos los sensores registrados. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{void}} \mbox{\hyperlink{classGestorSensores_ad4afb5e96ac8e98540adb59ed7a7b551}{listar\+Sensores}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Imprime información de todos los sensores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{classGestorSensores_a911730027f537e909f502bd146fb04ab}{obtener\+Cantidad}} () \mbox{\hyperlink{structNodo}{const}}
+\begin{DoxyCompactList}\small\item\em Obtiene el número de sensores registrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodoSensor}{Nodo\+Sensor}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGestorSensores_a75701e904e20af0bfc567d403f935144}{cabeza}}
+\begin{DoxyCompactList}\small\item\em Primer nodo de la lista de sensores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{int}} \mbox{\hyperlink{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683}{cantidad}}
+\begin{DoxyCompactList}\small\item\em Contador de sensores registrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Administrador central de todos los sensores del sistema. 
+
+TAREAS\+:
+\begin{DoxyEnumerate}
+\item Mantener una lista de todos los sensores activos
+\item Permitir agregar nuevos sensores
+\item Buscar sensores por ID
+\item Procesar todos los sensores con iteración
+\item Liberar memoria al destruirse
+\end{DoxyEnumerate}
+
+PATRÓN DE DISEÑO\+: Este es un ejemplo del patrón "{}\+Gestor"{} o "{}\+Manager"{}\+:
+\begin{DoxyItemize}
+\item Centraliza la gestión de recursos (sensores)
+\item Proporciona una interfaz limpia para operaciones comunes 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGestorSensores_ae5abd15000085e480146f34ac90e87a0}\label{classGestorSensores_ae5abd15000085e480146f34ac90e87a0} 
+\index{GestorSensores@{GestorSensores}!GestorSensores@{GestorSensores}}
+\index{GestorSensores@{GestorSensores}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{GestorSensores()}{GestorSensores()}}
+{\footnotesize\ttfamily Gestor\+Sensores\+::\+Gestor\+Sensores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor del gestor. 
+
+Inicializa la lista vacía y el contador en 0. \Hypertarget{classGestorSensores_a02439ac8bcc68db7fc97559f80513975}\label{classGestorSensores_a02439ac8bcc68db7fc97559f80513975} 
+\index{GestorSensores@{GestorSensores}!````~GestorSensores@{\texorpdfstring{$\sim$}{\string~}GestorSensores}}
+\index{````~GestorSensores@{\texorpdfstring{$\sim$}{\string~}GestorSensores}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GestorSensores()}{\string~GestorSensores()}}
+{\footnotesize\ttfamily Gestor\+Sensores\+::\texorpdfstring{$\sim$}{\string~}\+Gestor\+Sensores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor -\/ Libera TODOS los sensores y sus listas internas. 
+
+PROCESO CRÍ\+TICO DE LIBERACIÓN EN CASCADA\+:
+
+Para cada sensor en la lista\+:
+\begin{DoxyEnumerate}
+\item Obtenemos el puntero Sensor\+Base\texorpdfstring{$\ast$}{*}
+\item delete sensor llama a\+: a) \texorpdfstring{$\sim$}{\string~}\+Sensor\+Temperatura() o \texorpdfstring{$\sim$}{\string~}\+Sensor\+Presion()
+\begin{DoxyItemize}
+\item Aquí se imprime el mensaje de liberación
+\item Se destruye \textquotesingle{}historial\textquotesingle{} (\doxylink{classListaSensor}{Lista\+Sensor})
+\item \texorpdfstring{$\sim$}{\string~}\+Lista\+Sensor() libera TODOS los nodos internos b) \texorpdfstring{$\sim$}{\string~}\+Sensor\+Base()
+\end{DoxyItemize}
+\item Liberamos el \doxylink{structNodoSensor}{Nodo\+Sensor}
+\end{DoxyEnumerate}
+
+RAZÓN del orden\+:
+\begin{DoxyItemize}
+\item Primero delete sensor (libera el sensor y su lista interna)
+\item Después delete nodo\+Actual (libera el nodo de gestión)
+\end{DoxyItemize}
+
+Si no hiciéramos esto = FUGA MASIVA DE MEMORIA\+:
+\begin{DoxyItemize}
+\item Los sensores quedarían huérfanos
+\item Sus listas internas nunca se liberarían
+\item Todos los nodos de lecturas quedarían ocupando RAM 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGestorSensores_a05c2da9f796c09cc56d7afd84ce1862b}\label{classGestorSensores_a05c2da9f796c09cc56d7afd84ce1862b} 
+\index{GestorSensores@{GestorSensores}!agregarSensor@{agregarSensor}}
+\index{agregarSensor@{agregarSensor}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{agregarSensor()}{agregarSensor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{void}} Gestor\+Sensores\+::agregar\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensorBase}{Sensor\+Base}} \texorpdfstring{$\ast$}{*}}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega un nuevo sensor a la lista de gestión. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor} & Puntero al sensor (puede ser de cualquier tipo derivado)\\
+\hline
+\end{DoxyParams}
+CONCEPTO -\/ Polimorfismo en Acción\+: Podemos recibir\+: agregar\+Sensor(new \doxylink{classSensorTemperatura}{Sensor\+Temperatura}("{}\+T-\/001"{})); agregar\+Sensor(new \doxylink{classSensorPresion}{Sensor\+Presion}("{}\+P-\/001"{}));
+
+Ambos se almacenan como Sensor\+Base\texorpdfstring{$\ast$}{*}, pero mantienen su tipo real. Cuando llamamos sensor-\/\texorpdfstring{$>$}{>}procesar\+Lectura(), se ejecuta la versión correcta según el tipo real del objeto.
+
+PROCESO\+:
+\begin{DoxyEnumerate}
+\item Crear un \doxylink{structNodoSensor}{Nodo\+Sensor} con el puntero
+\item Insertarlo al final de la lista
+\item Incrementar contador 
+\end{DoxyEnumerate}\Hypertarget{classGestorSensores_a1ed1aa26dbebec793c30ff27c648883b}\label{classGestorSensores_a1ed1aa26dbebec793c30ff27c648883b} 
+\index{GestorSensores@{GestorSensores}!buscarSensor@{buscarSensor}}
+\index{buscarSensor@{buscarSensor}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{buscarSensor()}{buscarSensor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSensorBase}{Sensor\+Base}} \texorpdfstring{$\ast$}{*} Gestor\+Sensores\+::buscar\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNodo}{const}} \mbox{\hyperlink{structNodo}{char}} \texorpdfstring{$\ast$}{*}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Busca un sensor por su ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del sensor a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero al sensor encontrado, o nullptr si no existe
+\end{DoxyReturn}
+RAZÓN de retorno Sensor\+Base\texorpdfstring{$\ast$}{*}\+:
+\begin{DoxyItemize}
+\item El código cliente puede trabajar con el sensor sin saber su tipo
+\item Puede llamar a métodos polimórficos directamente 
+\end{DoxyItemize}\Hypertarget{classGestorSensores_ad4afb5e96ac8e98540adb59ed7a7b551}\label{classGestorSensores_ad4afb5e96ac8e98540adb59ed7a7b551} 
+\index{GestorSensores@{GestorSensores}!listarSensores@{listarSensores}}
+\index{listarSensores@{listarSensores}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{listarSensores()}{listarSensores()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{void}} Gestor\+Sensores\+::listar\+Sensores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime información de todos los sensores. 
+
+\Hypertarget{classGestorSensores_a911730027f537e909f502bd146fb04ab}\label{classGestorSensores_a911730027f537e909f502bd146fb04ab} 
+\index{GestorSensores@{GestorSensores}!obtenerCantidad@{obtenerCantidad}}
+\index{obtenerCantidad@{obtenerCantidad}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{obtenerCantidad()}{obtenerCantidad()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{int}} Gestor\+Sensores\+::obtener\+Cantidad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de sensores registrados. 
+
+\begin{DoxyReturn}{Returns}
+Cantidad de sensores 
+\end{DoxyReturn}
+\Hypertarget{classGestorSensores_a7a89dd977d44b6c9278f04d2738905de}\label{classGestorSensores_a7a89dd977d44b6c9278f04d2738905de} 
+\index{GestorSensores@{GestorSensores}!procesarTodos@{procesarTodos}}
+\index{procesarTodos@{procesarTodos}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{procesarTodos()}{procesarTodos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{void}} Gestor\+Sensores\+::procesar\+Todos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Procesa todos los sensores registrados. 
+
+DEMOSTRACIÓN DEL POLIMORFISMO\+:
+
+Para cada sensor en la lista\+: sensor-\/\texorpdfstring{$>$}{>}procesar\+Lectura();
+
+Aunque todos son Sensor\+Base\texorpdfstring{$\ast$}{*}, cada uno ejecuta SU PROPIA versión\+:
+\begin{DoxyItemize}
+\item \doxylink{classSensorTemperatura}{Sensor\+Temperatura}\+: Elimina mínimo + promedio
+\item \doxylink{classSensorPresion}{Sensor\+Presion}\+: Solo promedio
+\end{DoxyItemize}
+
+El gestor no necesita saber qué tipo es cada sensor. El polimorfismo se encarga automáticamente. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classGestorSensores_a75701e904e20af0bfc567d403f935144}\label{classGestorSensores_a75701e904e20af0bfc567d403f935144} 
+\index{GestorSensores@{GestorSensores}!cabeza@{cabeza}}
+\index{cabeza@{cabeza}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{cabeza}{cabeza}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodoSensor}{Nodo\+Sensor}}\texorpdfstring{$\ast$}{*} Gestor\+Sensores\+::cabeza\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Primer nodo de la lista de sensores. 
+
+\Hypertarget{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683}\label{classGestorSensores_a64eb0dafafb6416d13edd8af355a3683} 
+\index{GestorSensores@{GestorSensores}!cantidad@{cantidad}}
+\index{cantidad@{cantidad}!GestorSensores@{GestorSensores}}
+\doxysubsubsection{\texorpdfstring{cantidad}{cantidad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNodo}{int}} Gestor\+Sensores\+::cantidad\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contador de sensores registrados. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gina/\+Documentos/\+Est\+Datos/\+Actividades/\+U2-\/\+Act1-\/listasenlazadas/include/\mbox{\hyperlink{GestorSensores_8h}{Gestor\+Sensores.\+h}}\end{DoxyCompactItemize}

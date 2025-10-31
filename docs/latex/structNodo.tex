@@ -1,0 +1,98 @@
+\doxysection{Nodo\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structNodo}{}\label{structNodo}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+
+
+\doxylink{structNodo}{Nodo} genérico para la lista enlazada.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+Sensor.\+h$>$}
+
+
+
+Collaboration diagram for Nodo\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{structNodo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structNodo_a96da8b61d6884126bb04fced32542df9}{Nodo}} (T \mbox{\hyperlink{structNodo}{valor}})
+\begin{DoxyCompactList}\small\item\em Constructor del nodo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{structNodo_ad2db7dbf78e797a2c4f4541619245d4f}{dato}}
+\begin{DoxyCompactList}\small\item\em Valor almacenado en el nodo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structNodo_a6691e5766a27432fad708189c11f679d}{siguiente}}
+\begin{DoxyCompactList}\small\item\em Puntero al siguiente nodo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct Nodo$<$ T $>$}
+\doxylink{structNodo}{Nodo} genérico para la lista enlazada. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Tipo de dato que almacenará el nodo\+: int, float, etc..\\
+\hline
+\end{DoxyTemplParams}
+CONCEPTO\+: Un nodo es como una caja que contiene\+:
+\begin{DoxyEnumerate}
+\item Un valor (dato)
+\item Una flecha que apunta a la siguiente caja, la siguiente. 
+\end{DoxyEnumerate}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structNodo_a96da8b61d6884126bb04fced32542df9}\label{structNodo_a96da8b61d6884126bb04fced32542df9} 
+\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!Nodo@{Nodo}}
+\index{Nodo@{Nodo}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Nodo()}{Nodo()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{Nodo}}$<$ T $>$\mbox{\hyperlink{structNodo}{\+::\+Nodo}} (\begin{DoxyParamCaption}\item[{T}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor del nodo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & El dato a almacenar\\
+\hline
+\end{DoxyParams}
+¿\+Por qué? Inicializamos el "{}siguiente"{} como un nullptr porque aun no se sabe cual sera el nodo siguiente 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structNodo_ad2db7dbf78e797a2c4f4541619245d4f}\label{structNodo_ad2db7dbf78e797a2c4f4541619245d4f} 
+\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!dato@{dato}}
+\index{dato@{dato}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dato}{dato}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+T \mbox{\hyperlink{structNodo}{Nodo}}$<$ T $>$\+::dato}
+
+
+
+Valor almacenado en el nodo. 
+
+\Hypertarget{structNodo_a6691e5766a27432fad708189c11f679d}\label{structNodo_a6691e5766a27432fad708189c11f679d} 
+\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!siguiente@{siguiente}}
+\index{siguiente@{siguiente}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{siguiente}{siguiente}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{structNodo}{typename}} T $>$ \\
+\mbox{\hyperlink{structNodo}{Nodo}}$<$T$>$\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structNodo}{Nodo}}$<$ T $>$\+::siguiente}
+
+
+
+Puntero al siguiente nodo. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gina/\+Documentos/\+Est\+Datos/\+Actividades/\+U2-\/\+Act1-\/listasenlazadas/include/\mbox{\hyperlink{ListaSensor_8h}{Lista\+Sensor.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="ListaSensor::imprimir" name="ListaSensor::imprimir">
+<area shape="rect" id="Node000001" title="Imprime todos los elementos de la lista." alt="" coords="256,35,417,60"/>
+<area shape="rect" id="Node000002" href="$classSensorPresion.html#ad5181690dfb24946217e882606f04428" title="Imprime información detallada del sensor." alt="" coords="5,5,208,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,38,206,33,207,28,243,33"/>
+<area shape="rect" id="Node000003" href="$classSensorTemperatura.html#a95a263967c5f9a55da09be3b11c27c86" title="Imprime información del sensor y sus lecturas." alt="" coords="29,55,185,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,61,185,69,184,63,242,56"/>
+</map>

@@ -1,0 +1,3 @@
+/home/gina/Documentos/EstDatos/Actividades/U2-Act1-listasenlazadas/build/CMakeFiles/SistemaIoT.dir
+/home/gina/Documentos/EstDatos/Actividades/U2-Act1-listasenlazadas/build/CMakeFiles/edit_cache.dir
+/home/gina/Documentos/EstDatos/Actividades/U2-Act1-listasenlazadas/build/CMakeFiles/rebuild_cache.dir

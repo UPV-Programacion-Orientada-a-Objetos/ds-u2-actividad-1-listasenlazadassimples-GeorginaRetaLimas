@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic -O2 -g -O3 -DNDEBUG CMakeFiles/SistemaIoT.dir/src/main.cpp.o -o SistemaIoT 
